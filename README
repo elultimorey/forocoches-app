@@ -1,0 +1,4 @@
+Aplicación para android de Forocoches.
+Esta aplicación utiliza el navegador del teléfono, carga la dirección "m.forocoches.com".
+Las contraseñas no son guardadas por la aplicación si no por el navegador proporcionado por el sistema.
+Esta aplicación implementa Accesos Directos que pueden realizarse en el navegador, simplemente ayuda a que sea más sencilla la navegación.
