@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="es.elultimorey.forocoches"
+      android:versionName="@string/app_version" android:versionCode="11">
+    <uses-sdk android:minSdkVersion="4" android:targetSdkVersion="4"/>
+
+    <application android:label="@string/app_name" android:icon="@drawable/icono">
+        <activity android:label="@string/app_name" android:configChanges="keyboard|keyboardHidden|orientation" android:name="ForoCochesActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="AboutActivity" android:label="@string/acerca_activity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"></action>
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="PreferencesActivity" android:configChanges="keyboard|keyboardHidden|orientation" android:label="Preferencias de Forocoches App">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"></action>
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="ContactoActivity" android:label="@string/contacto_comentarios"></activity>
+        <activity android:name="AyudaActivity" android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/ayuda_activity"></activity>
+
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+</manifest>

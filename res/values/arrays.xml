@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="shorcurt">
+		<item name="panel_usuario">Panel de Control de Usuario</item>
+		<item name="menciones">Menciones</item>
+		<item name="privados">Privados</item>
+		<item name="temas_suscritos">Temas suscritos</item>
+		<item name="temas_s_novedades">Temas suscritos con Novedades</item>
+		<item name="herramientas_foro">Panel de Herramientas del Foro</item>
+		<item name="responder">Responder</item>
+		<item name="nuevo_tema">Nuevo Tema</item>
+		<item name="buscar">Buscar</item>
+		<item name="temas_de_hoy">Temas de Hoy</item>
+		<item name="ir_a">Ir a...</item>
+		<item name="adelante">Adelante</item>
+		<item name="atras">Atrás</item>
+	</string-array>
+	
+	    <string-array name="shorcurt_values">
+		<item name="panel_usuario">panel_usuario</item>
+		<item name="menciones">menciones</item>
+		<item name="privados">privados</item>
+		<item name="temas_suscritos">temas_suscritos</item>
+		<item name="temas_s_novedades">temas_s_novedades</item>
+		<item name="herramientas_foro">herramientas_foro</item>
+		<item name="responder">responder</item>
+		<item name="nuevo_tema">nuevo_tema</item>
+		<item name="buscar">buscar</item>
+		<item name="temas_de_hoy">temas_de_hoy</item>
+		<item name="ir_a">ir_a</item>
+		<item name="adelante">adelante</item>
+		<item name="atras">atras</item>
+	</string-array>
+	
+</resources>

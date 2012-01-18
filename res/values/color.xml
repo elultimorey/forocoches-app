@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bar_start">#EFEFEF</color>
+    <color name="bar_end">#D4D4D4</color>
+    <color name="button_touch_start">#D4D4D4</color>
+    <color name="button_touch_center">#EFEFEF</color>
+    <color name="button_touch_end">#D4D4D4</color>
+    <color name="button_normal_start">#EFEFEF</color>
+    <color name="button_normal_end">#D4D4D4</color>
+    <color name="black">#000000</color>
+    <color name="rojo_gmail">#e34300</color>
+    <color name="azul_twitter">#1bb9ec</color>
+    <color name="azul_link">#86c3ff</color>
+    <color name="white">#ffffff</color>
+    
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:id="@+id/panel_usuario" android:icon="@drawable/ic_menu_user" android:title="@string/menu_panel_usuario"></item>
+  <item android:id="@+id/panel_foro" android:icon="@drawable/ic_menu_tools" android:title="@string/menu_herramientas"></item>
+  <item android:icon="@drawable/ic_menu_forward" android:id="@+id/adelante" android:title="@string/menu_adelante"> </item>
+  <item android:icon="@drawable/ic_menu_preferences" android:id="@+id/ajustes" android:title="@string/menu_ajustes"></item>
+  <item android:id="@+id/salir" android:icon="@drawable/ic_menu_exit" android:title="@string/menu_salir"></item>
+</menu>
