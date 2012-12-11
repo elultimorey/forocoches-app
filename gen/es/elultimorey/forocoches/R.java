@@ -32,62 +32,56 @@ public final class R {
         public static final int bar_background=0x7f020000;
         public static final int bar_button_normal=0x7f020001;
         public static final int bar_button_touch=0x7f020002;
-        public static final int gmail=0x7f020003;
-        public static final int ic_ad_herramientas=0x7f020004;
-        public static final int ic_ad_usuario=0x7f020005;
-        public static final int ic_bar_actualizar=0x7f020006;
-        public static final int ic_bar_adelante=0x7f020007;
-        public static final int ic_bar_atras=0x7f020008;
-        public static final int ic_bar_buscar=0x7f020009;
+        public static final int ic_ad_herramientas=0x7f020003;
+        public static final int ic_ad_usuario=0x7f020004;
+        public static final int ic_bar_actualizar=0x7f020005;
+        public static final int ic_bar_adelante=0x7f020006;
+        public static final int ic_bar_atras=0x7f020007;
+        public static final int ic_bar_buscar=0x7f020008;
+        public static final int ic_bar_compartir=0x7f020009;
         public static final int ic_bar_herramientas=0x7f02000a;
-        public static final int ic_bar_hoy=0x7f02000b;
-        public static final int ic_bar_ira=0x7f02000c;
-        public static final int ic_bar_menciones=0x7f02000d;
-        public static final int ic_bar_nuevo=0x7f02000e;
-        public static final int ic_bar_privados=0x7f02000f;
-        public static final int ic_bar_responder=0x7f020010;
-        public static final int ic_bar_temas=0x7f020011;
-        public static final int ic_bar_usuario=0x7f020012;
-        public static final int ic_menu_exit=0x7f020013;
-        public static final int ic_menu_forward=0x7f020014;
-        public static final int ic_menu_preferences=0x7f020015;
-        public static final int ic_menu_tools=0x7f020016;
-        public static final int ic_menu_user=0x7f020017;
-        public static final int icono=0x7f020018;
-        public static final int lexus=0x7f020019;
-        public static final int lexus_touch=0x7f02001a;
-        public static final int progress_bar=0x7f02001b;
-        public static final int twitter=0x7f02001c;
+        public static final int ic_bar_menciones=0x7f02000b;
+        public static final int ic_bar_nuevo=0x7f02000c;
+        public static final int ic_bar_privados=0x7f02000d;
+        public static final int ic_bar_responder=0x7f02000e;
+        public static final int ic_bar_temas=0x7f02000f;
+        public static final int ic_bar_usuario=0x7f020010;
+        public static final int ic_menu_exit=0x7f020011;
+        public static final int ic_menu_forward=0x7f020012;
+        public static final int ic_menu_preferences=0x7f020013;
+        public static final int ic_menu_tools=0x7f020014;
+        public static final int ic_menu_user=0x7f020015;
+        public static final int icono=0x7f020016;
+        public static final int lexus=0x7f020017;
+        public static final int lexus_touch=0x7f020018;
+        public static final int progress_bar=0x7f020019;
     }
     public static final class id {
-        public static final int LinearLayout01=0x7f0a000e;
+        public static final int LinearLayout01=0x7f0a000c;
         public static final int ProgressBar=0x7f0a000b;
         public static final int TR02=0x7f0a0002;
         public static final int action_bar=0x7f0a0001;
         public static final int actualizar=0x7f0a000a;
-        public static final int adelante=0x7f0a0012;
+        public static final int adelante=0x7f0a0010;
         public static final int aire1=0x7f0a0003;
         public static final int aire2=0x7f0a0005;
-        public static final int ajustes=0x7f0a0013;
-        public static final int contacto_gmail=0x7f0a000c;
-        public static final int contacto_twitter=0x7f0a000d;
+        public static final int ajustes=0x7f0a0011;
         public static final int first=0x7f0a0008;
         public static final int lexus_home=0x7f0a0004;
-        public static final int panel_foro=0x7f0a0011;
-        public static final int panel_usuario=0x7f0a0010;
+        public static final int panel_foro=0x7f0a000f;
+        public static final int panel_usuario=0x7f0a000e;
         public static final int progress_bar_circle=0x7f0a0006;
         public static final int relativeLayout1=0x7f0a0007;
-        public static final int salir=0x7f0a0014;
+        public static final int salir=0x7f0a0012;
         public static final int second=0x7f0a0009;
         public static final int textview_normas=0x7f0a0000;
-        public static final int webview=0x7f0a000f;
+        public static final int webview=0x7f0a000d;
     }
     public static final class layout {
         public static final int acerca=0x7f030000;
         public static final int action_bar=0x7f030001;
         public static final int ayuda=0x7f030002;
-        public static final int contacto=0x7f030003;
-        public static final int main=0x7f030004;
+        public static final int main=0x7f030003;
     }
     public static final class menu {
         public static final int menu=0x7f090000;
@@ -96,30 +90,25 @@ public final class R {
         public static final int Aceptar=0x7f070002;
         public static final int Cancelar=0x7f070003;
         public static final int acerca_activity=0x7f070007;
-        public static final int acerca_normas=0x7f070027;
+        public static final int acerca_normas=0x7f070025;
         /**  Acerca de 
          */
-        public static final int acerca_text=0x7f070025;
-        public static final int acerca_text2=0x7f070026;
+        public static final int acerca_text=0x7f070023;
+        public static final int acerca_text2=0x7f070024;
         /**  General 
          */
         public static final int app_name=0x7f070000;
         public static final int app_version=0x7f070001;
         public static final int ayuda_activity=0x7f070006;
-        public static final int ayuda_text_buttons=0x7f07002c;
-        public static final int ayuda_text_comments=0x7f07002d;
-        public static final int ayuda_text_shortcurts=0x7f07002b;
-        public static final int ayuda_title_buttons=0x7f070029;
-        public static final int ayuda_title_comments=0x7f07002a;
+        public static final int ayuda_text_buttons=0x7f07002a;
+        public static final int ayuda_text_comments=0x7f07002b;
+        public static final int ayuda_text_shortcurts=0x7f070029;
+        public static final int ayuda_title_buttons=0x7f070027;
+        public static final int ayuda_title_comments=0x7f070028;
         /**  Ayuda 
          */
-        public static final int ayuda_title_shortcurts=0x7f070028;
-        /**  Contacto 
-         */
-        public static final int contacto=0x7f07002e;
+        public static final int ayuda_title_shortcurts=0x7f070026;
         public static final int contacto_comentarios=0x7f070008;
-        public static final int contacto_email=0x7f07002f;
-        public static final int contacto_twitter=0x7f070030;
         public static final int dialog_herramientas_title=0x7f070005;
         public static final int dialog_user_title=0x7f070004;
         public static final int menu_adelante=0x7f07000b;
@@ -131,16 +120,14 @@ public final class R {
         public static final int menu_salir=0x7f07000d;
         public static final int pref_about=0x7f070012;
         public static final int pref_about_acerca=0x7f070019;
-        public static final int pref_about_acerca_text=0x7f070023;
+        public static final int pref_about_acerca_text=0x7f070022;
         public static final int pref_about_ayuda=0x7f070018;
-        public static final int pref_about_ayuda_text=0x7f070022;
-        public static final int pref_about_contact=0x7f07001a;
-        public static final int pref_about_contact_text=0x7f070024;
-        public static final int pref_about_version=0x7f07001b;
+        public static final int pref_about_ayuda_text=0x7f070021;
+        public static final int pref_about_version=0x7f07001a;
         public static final int pref_generales=0x7f070010;
         public static final int pref_navegacion=0x7f070011;
         public static final int pref_navegacion_completa=0x7f070017;
-        public static final int pref_navegacion_completa_text=0x7f070021;
+        public static final int pref_navegacion_completa_text=0x7f070020;
         public static final int pref_navegacion_javascript=0x7f070016;
         /**  Ajustes 
  Primer nivel 
@@ -151,14 +138,14 @@ public final class R {
         public static final int pref_shortcurt_first=0x7f070013;
         /**  Otros 
          */
-        public static final int pref_shortcurt_first_text=0x7f07001c;
+        public static final int pref_shortcurt_first_text=0x7f07001b;
         public static final int pref_shortcurt_second=0x7f070014;
-        public static final int pref_shortcurt_second_text=0x7f07001d;
+        public static final int pref_shortcurt_second_text=0x7f07001c;
         public static final int pref_user=0x7f07000f;
         public static final int pref_user_name=0x7f070015;
-        public static final int pref_user_text=0x7f07001e;
-        public static final int pref_usuario=0x7f07001f;
-        public static final int pref_usuario_text=0x7f070020;
+        public static final int pref_user_text=0x7f07001d;
+        public static final int pref_usuario=0x7f07001e;
+        public static final int pref_usuario_text=0x7f07001f;
     }
     public static final class style {
         public static final int contacto_gmail=0x7f080003;

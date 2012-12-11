@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -100,7 +101,7 @@ public class ForoCochesActivity extends Activity {
 			
 			@Override
 			public boolean onLongClick(View v) {
-				openIrADialog();
+				openZonasDialog();
 				return false;
 			}
 		});
@@ -239,6 +240,36 @@ public class ForoCochesActivity extends Activity {
 			webView.loadUrl(miURLHandler.buscar());
 		return super.onKeyDown(keyCode, event);
 	}
+	
+	public void openZonasDialog() {
+		final CharSequence[] items = {"Zona General", "Zona Forocoches", "Zona Técnica & Info", "Zona Misc.", "Zona Comercial", "Otros"};
+		AlertDialog.Builder builder = new AlertDialog.Builder(this)
+		.setTitle("Ir a...")
+		.setIcon(R.drawable.ic_ad_herramientas)
+		.setItems(items, new DialogInterface.OnClickListener() {
+			@Override
+			public void onClick(DialogInterface dialog, int which) {
+				switch (which) {
+				case 0: openZGeneral();
+				break;
+				case 1: openZForocoches();
+				break;
+				case 2: openZTecnica();
+				break;
+				case 3: openZMisc();
+				break;
+				case 4: openZComercial();
+				break;
+				case 5: openZOtros();
+				break;
+				}
+			}
+		});
+
+		AlertDialog alert = builder.create();
+		alert.show();
+
+	}
 
 	public void openPanelUsuarioDialog(){
 		final CharSequence[] items = {"Menciones", "Mensajes Privados", "Temas suscritos", "Temas suscritos con novedades"};
@@ -295,8 +326,7 @@ public class ForoCochesActivity extends Activity {
 	public void openHerramientasDialog() {
 		LinkedList<CharSequence> listItems = new LinkedList<CharSequence>();
 		listItems.addLast("Buscar");
-		listItems.addLast("Temas de hoy");
-		listItems.addLast("Ir a...");
+		listItems.addLast("Compartir");
 		// Evita 'Force Close' si se pulsa y aún no hay url en webView
 		final String url;
 		if (webView.getUrl() != null)
@@ -321,10 +351,8 @@ public class ForoCochesActivity extends Activity {
 			public void onClick(DialogInterface dialog, int item) {
 				if (items[item].equals("Buscar"))
 					webView.loadUrl(miURLHandler.buscar());
-				else if (items[item].equals("Temas de hoy"))
-					webView.loadUrl(miURLHandler.temasHoy());
-				else if (items[item].equals("Ir a..."))
-					openIrADialog();
+				else if (items[item].equals("Compartir"))
+					openCompartir();
 				else if (items[item].equals("Responder"))
 					webView.loadUrl(miURLHandler.responer(url));
 				else if (items[item].equals("Suscribir"))
@@ -338,34 +366,14 @@ public class ForoCochesActivity extends Activity {
 
 	}
 
-	public void openIrADialog() {
-		final CharSequence[] items = {"Zona General", "Zona Forocoches", "Zona Técnica & Info", "Zona Misc.", "Zona Comercial", "Otros"};
-		AlertDialog.Builder builder = new AlertDialog.Builder(this)
-		.setTitle("Ir a...")
-		.setIcon(R.drawable.ic_ad_herramientas)
-		.setItems(items, new DialogInterface.OnClickListener() {
-			@Override
-			public void onClick(DialogInterface dialog, int which) {
-				switch (which) {
-				case 0: openZGeneral();
-				break;
-				case 1: openZForocoches();
-				break;
-				case 2: openZTecnica();
-				break;
-				case 3: openZMisc();
-				break;
-				case 4: openZComercial();
-				break;
-				case 5: openZOtros();
-				break;
-				}
-			}
-		});
-
-		AlertDialog alert = builder.create();
-		alert.show();
-
+	public void openCompartir() {
+		Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
+		sharingIntent.setType("text/plain");
+		String shareBody = webView.getUrl().replace("//m.", "//www.");
+		sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, webView.getTitle());
+		Log.d("TITULO", webView.getTitle());
+		sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, shareBody);
+		startActivity(Intent.createChooser(sharingIntent, "Compartir"));
 	}
 
 	public void openZGeneral() {
@@ -532,7 +540,9 @@ public class ForoCochesActivity extends Activity {
 		mPrefs = PreferenceManager.getDefaultSharedPreferences(this);
 
 		String fs = mPrefs.getString("first_shortcurt_pref", "default");
-
+		
+		Log.d("FS", fs);
+		
 		if (fs.equals("panel_usuario")) {
 			firstEnum = EnumShortcut.PANEL_U;
 			firstShorcurt.setImageResource(R.drawable.ic_bar_usuario);
@@ -569,13 +579,9 @@ public class ForoCochesActivity extends Activity {
 			firstEnum = EnumShortcut.BUSCAR;
 			firstShorcurt.setImageResource(R.drawable.ic_bar_buscar);
 		}
-		else if (fs.equals("temas_de_hoy")) {		
-			firstEnum = EnumShortcut.TEMAS_HOY;
-			firstShorcurt.setImageResource(R.drawable.ic_bar_hoy);
-		}
-		else if (fs.equals("ir_a")) {	
-			firstEnum = EnumShortcut.IR_A;
-			firstShorcurt.setImageResource(R.drawable.ic_bar_ira);
+		else if (fs.equals("compartir")) {	
+			firstEnum = EnumShortcut.COMPARTIR;
+			firstShorcurt.setImageResource(R.drawable.ic_bar_compartir);
 		}
 		else if (fs.equals("adelante")) {	
 			firstEnum = EnumShortcut.ADELANTE;
@@ -592,6 +598,8 @@ public class ForoCochesActivity extends Activity {
 
 		String ss = mPrefs.getString("second_shortcurt_pref", "default");
 
+		Log.d("SS", ss);
+		
 		if (ss.equals("panel_usuario")) {
 			secondEnum = EnumShortcut.PANEL_U;
 			secondShorcurt.setImageResource(R.drawable.ic_bar_usuario);
@@ -628,13 +636,9 @@ public class ForoCochesActivity extends Activity {
 			secondEnum = EnumShortcut.BUSCAR;
 			secondShorcurt.setImageResource(R.drawable.ic_bar_buscar);
 		}
-		else if (ss.equals("temas_de_hoy")) {		
-			secondEnum = EnumShortcut.TEMAS_HOY;
-			secondShorcurt.setImageResource(R.drawable.ic_bar_hoy);
-		}
-		else if (ss.equals("ir_a")) {	
-			secondEnum = EnumShortcut.IR_A;
-			secondShorcurt.setImageResource(R.drawable.ic_bar_ira);
+		else if (ss.equals("compartir")) {	
+			secondEnum = EnumShortcut.COMPARTIR;
+			secondShorcurt.setImageResource(R.drawable.ic_bar_compartir);
 		}
 		else if (ss.equals("adelante")) {	
 			secondEnum = EnumShortcut.ADELANTE;
@@ -705,11 +709,8 @@ public class ForoCochesActivity extends Activity {
 		case BUSCAR:
 			webView.loadUrl(miURLHandler.buscar());
 			break;
-		case TEMAS_HOY:
-			webView.loadUrl(miURLHandler.temasHoy());
-			break;
-		case IR_A:
-			openIrADialog();
+		case COMPARTIR:
+			openCompartir();
 			break;
 		case ADELANTE:
 			if(webView.canGoForward())

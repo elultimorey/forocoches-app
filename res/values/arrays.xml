@@ -11,8 +11,7 @@
 		<item name="responder">Responder</item>
 		<item name="nuevo_tema">Nuevo Tema</item>
 		<item name="buscar">Buscar</item>
-		<item name="temas_de_hoy">Temas de Hoy</item>
-		<item name="ir_a">Ir a...</item>
+		<item name="compartir">Compartir</item>
 		<item name="adelante">Adelante</item>
 		<item name="atras">Atrás</item>
 	</string-array>
@@ -27,8 +26,7 @@
 		<item name="responder">responder</item>
 		<item name="nuevo_tema">nuevo_tema</item>
 		<item name="buscar">buscar</item>
-		<item name="temas_de_hoy">temas_de_hoy</item>
-		<item name="ir_a">ir_a</item>
+		<item name="compartir">compartir</item>
 		<item name="adelante">adelante</item>
 		<item name="atras">atras</item>
 	</string-array>

@@ -18,8 +18,6 @@ public class PreferencesActivity extends PreferenceActivity {
 		String s = preference.getKey();
 		if (s.equals("acerca_pref"))
 			startActivity(new Intent(getApplicationContext(), AboutActivity.class));
-		else if (s.equals("contact_pref"))
-			startActivity(new Intent(getApplicationContext(), ContactoActivity.class));
 		else if (s.equals("ayuda_pref"))
 			startActivity(new Intent(getApplicationContext(), AyudaActivity.class));
 		return super.onPreferenceTreeClick(preferenceScreen, preference);
