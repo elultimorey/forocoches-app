@@ -1,13 +1,19 @@
 package es.elultimorey.forocoches;
 
+import android.app.Activity;
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
+
 public class URLHandler {
 
 	private final static String URL_M_FOROCOCHES = "http://m.forocoches.com/foro/";
 	private final static String URL_FOROCOCHES = "http://www.forocoches.com/foro/";
 	private boolean versionCompleta = false;
 	
-	public URLHandler () {
-		super();
+	private final Activity app;
+	
+	public URLHandler (Activity app) {
+		this.app = app;
 	}
 	
 	/**
@@ -57,9 +63,13 @@ public class URLHandler {
 	 * @return url para buscar a "usuario"
 	 */
 	public String menciones(String usuario) {
-		String url = getURL() + "search.php?s=&securitytoken=1310230883-2cbd45b52395e77a799e0e1dbde21caf18f19deb&do=process&searchthreadid=&query="
+		SharedPreferences mPrefs = PreferenceManager.getDefaultSharedPreferences(app);
+		String url = getURL() + "search.php?do=process&searchthreadid=&query="
 			+ usuario
-			+ "&titleonly=0&forumchoice[]=0&childforums=1&replyless=0&replylimit=0&searchdate=0&beforeafter=after&sortby=lastpost&";
+			+ "&exactname=1&showposts="
+			+ mPrefs.getString("user_menciones", "0")
+			+ "&sortby=lastpost&";
+			
 		return url;
 	}
 	

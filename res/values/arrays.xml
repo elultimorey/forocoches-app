@@ -31,4 +31,13 @@
 		<item name="atras">atras</item>
 	</string-array>
 	
+	<string-array name="menciones">
+	    <item name="temas">Temas</item>
+	    <item name="mensajes">Mensajes</item>
+	</string-array>
+	<string-array name="menciones_values">
+	    <item name="temas">0</item>
+	    <item name="mensajes">1</item>
+	</string-array>
+	
 </resources>

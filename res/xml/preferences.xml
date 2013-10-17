@@ -4,17 +4,21 @@
     <PreferenceCategory android:key="shortcurt_pref" android:title="@string/pref_shortcurt">
         <ListPreference android:entries="@array/shorcurt" android:key="first_shortcurt_pref" android:entryValues="@array/shorcurt_values" android:dialogTitle="@string/pref_shortcurt_first" android:summary="@string/pref_shortcurt_first_text" android:title="@string/pref_shortcurt_first"></ListPreference>
         <ListPreference android:key="second_shortcurt_pref" android:entryValues="@array/shorcurt_values" android:entries="@array/shorcurt" android:dialogTitle="@string/pref_shortcurt_second" android:summary="@string/pref_shortcurt_second_text" android:title="@string/pref_shortcurt_second"></ListPreference>
-    </PreferenceCategory><PreferenceCategory android:key="user_pref" android:title="@string/pref_user">
-        <EditTextPreference android:key="user_name" android:dialogTitle="@string/pref_usuario" android:dialogMessage="@string/pref_usuario_text" android:summary="@string/pref_user_text" android:title="@string/pref_user_name"></EditTextPreference>
     </PreferenceCategory>
     
-    <PreferenceCategory android:title="@string/pref_navegacion" android:key="nav_pref">
-        
+    <PreferenceCategory android:key="user_pref" android:title="@string/pref_user">
+        <EditTextPreference android:key="user_name" android:dialogTitle="@string/pref_usuario" android:dialogMessage="@string/pref_usuario_text" android:summary="@string/pref_user_text" android:title="@string/pref_user_name"></EditTextPreference>
+    	<ListPreference android:key="user_menciones" android:entryValues="@array/menciones_values" android:entries="@array/menciones" android:dialogTitle="@string/pref_menciones" android:summary="@string/pref_user_menciones_text" android:title="@string/pref_user_menciones"/>
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="@string/pref_navegacion" android:key="nav_pref">    
         <CheckBoxPreference android:title="@string/pref_navegacion_javascript" android:key="pref_navegacion_javascript"></CheckBoxPreference><CheckBoxPreference android:summary="@string/pref_navegacion_completa_text" android:key="pref_navegacion_completa" android:title="@string/pref_navegacion_completa"></CheckBoxPreference>
-    </PreferenceCategory><PreferenceCategory android:title="@string/pref_about" android:key="about_pref"><Preference android:title="@string/pref_about_ayuda" android:summary="@string/pref_about_ayuda_text" android:key="ayuda_pref"></Preference><Preference android:key="acerca_pref" android:title="@string/pref_about_acerca" android:summary="@string/pref_about_acerca_text"></Preference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_about" android:key="about_pref"><Preference android:title="@string/pref_about_ayuda" android:summary="@string/pref_about_ayuda_text" android:key="ayuda_pref"></Preference><Preference android:key="acerca_pref" android:title="@string/pref_about_acerca" android:summary="@string/pref_about_acerca_text"></Preference>
     <Preference android:key="version_pref" android:title="@string/pref_about_version" android:enabled="false" android:summary="@string/app_version"></Preference>
     
 </PreferenceCategory>
+    
     
     
     

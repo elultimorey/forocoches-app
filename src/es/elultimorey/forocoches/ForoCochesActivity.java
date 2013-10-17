@@ -29,7 +29,7 @@ import android.widget.Toast;
 
 public class ForoCochesActivity extends Activity {
 
-	URLHandler miURLHandler = new URLHandler();
+	URLHandler miURLHandler = new URLHandler(this);
 	SharedPreferences mPrefs;
 	WebView webView;
 	ProgressBar mProgressBar;
@@ -168,7 +168,7 @@ public class ForoCochesActivity extends Activity {
 	@Override
 	public void onRestart() {
 		super.onRestart();
-		webView.loadUrl(mPrefs.getString("url_pause", new URLHandler().getURL()));
+		webView.loadUrl(mPrefs.getString("url_pause", new URLHandler(this).getURL()));
 	}
 	
 	@Override

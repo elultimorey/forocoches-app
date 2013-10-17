@@ -9,6 +9,8 @@ import android.widget.TextView;
 
 public class AboutActivity extends Activity {
 	
+	private Activity app = this;
+	
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.acerca);
@@ -18,7 +20,7 @@ public class AboutActivity extends Activity {
 			
 			@Override
 			public void onClick(View v) {
-                Uri uri = Uri.parse(new URLHandler().normas());
+                Uri uri = Uri.parse(new URLHandler(app).normas());
                 Intent intent = new Intent("android.intent.action.VIEW", uri);
                 startActivity(intent);
 			}
