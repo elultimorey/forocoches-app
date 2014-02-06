@@ -106,8 +106,10 @@ public final class R {
         public static final int app_name=0x7f070000;
         public static final int app_version=0x7f070001;
         public static final int ayuda_activity=0x7f070006;
+        public static final int ayuda_new=0x7f07002e;
+        public static final int ayuda_new_text=0x7f07002f;
         public static final int ayuda_text_buttons=0x7f07002d;
-        public static final int ayuda_text_comments=0x7f07002e;
+        public static final int ayuda_text_comments=0x7f070030;
         public static final int ayuda_text_shortcurts=0x7f07002c;
         public static final int ayuda_title_buttons=0x7f07002a;
         public static final int ayuda_title_comments=0x7f07002b;
