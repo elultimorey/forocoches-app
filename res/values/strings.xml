@@ -2,7 +2,7 @@
 <resources>
 	<!-- General -->
     <string name="app_name">ForoCoches App</string>
-    <string name="app_version">01.26.10</string>
+    <string name="app_version">01.50.00</string>
     <string name="Aceptar">Aceptar</string>
     <string name="Cancelar">Cancelar</string>
     <string name="dialog_user_title">Panel de Control de Usuario</string>
@@ -61,6 +61,6 @@
     <string name="ayuda_title_buttons">Botones Físicos del Teléfono:</string>
     <string name="ayuda_title_comments">Comentarios:</string>
     <string name="ayuda_text_shortcurts">\t<b>Barra Superior</b>: Si pulsas la barra superior, la página subirá al principio automáticamente.\n\t- <b>Lexus:</b> Página Inicial de ForoCoches.com, y más.\n\t- <b>Dos accesos directos</b> a opciones de la aplicación (selecciona los que prefieras en Ajustes)\n\t- <b>Recargar</b>: Recarga la página actual.</string>
-    <string name="ayuda_text_buttons"><b>Tecla Retroceso:</b>\n\t- Volver a la página anterior.\n\t- Si estamos en la primera página -> Salir de la aplicación.\n<b>Tecla Menú:</b>\n\t- Panel de usuario: Menciones, Mensajes Privados, Temas Suscritos y Temas Suscritos con Novedades.\n\t- Herramientas: Buscar, Compartir. Además dependiendo de donde nos encomtremos podresmos crear un Nuevo Tema, y responder o suscribirnos a un hilo.\n\t- Adelante: Avanza a la página anterior si hemos retrocedido.\n\t- Ajustes: Permite ajustar las opciones del navegador (accesos directos, nombre de usuario...).\n\t- Salir: Salir de la aplicación\n<b>Tecla Búsqueda:</b>\n\t- Permite utilizar el motor de búsqueda del foro.</string>
+    <string name="ayuda_text_buttons"><b>Tecla Retroceso:</b>\n\t- Volver a la página anterior.\n\t- Si estamos en la primera página -> Salir de la aplicación.\n<b>Tecla Menú:</b>\n\t- Panel de usuario: Menciones, Mensajes Privados, Temas Suscritos y Temas Suscritos con Novedades.\n\t- Herramientas: Buscar, Compartir, Temas de Hoy. Además dependiendo de donde nos encomtremos podresmos crear un Nuevo Tema, y responder o suscribirnos a un hilo.\n\t- Adelante: Avanza a la página anterior si hemos retrocedido.\n\t- Ajustes: Permite ajustar las opciones del navegador (accesos directos, nombre de usuario...).\n\t- Salir: Salir de la aplicación\n<b>Tecla Búsqueda:</b>\n\t- Permite utilizar el motor de búsqueda del foro.</string>
     <string name="ayuda_text_comments">\tCualquier sugerencia para mejorar la aplicación será bienvenida. Puedes contactarme con un email a: elultimorey.dev@gmail.com.</string>
 </resources>

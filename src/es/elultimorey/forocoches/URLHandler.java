@@ -103,9 +103,20 @@ public class URLHandler {
 	}
 	
 	public String suscribir(String hilo) {
-		String[] splt = hilo.split("t=");
+		String[] splt = null;
+		String top = "t";
+		// Si llegamos desde un thread
+		if (hilo.contains("?t="))
+			splt = hilo.split("t=");
+		// Si llegamos desde un post
+		else if (hilo.contains("?p=")){
+			splt = hilo.split("#post");
+			top = "p";
+		}
+		if (splt == null)
+			return hilo;
 		String[] codigo = splt[1].split("&");
-		return getURL() + "subscription.php?do=addsubscription&t="+codigo[0];
+		return getURL() + "subscription.php?do=addsubscription&"+top+"="+codigo[0];
 	}
 	
 	public String nuevoTema(String url) {

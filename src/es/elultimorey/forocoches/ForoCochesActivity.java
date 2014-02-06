@@ -2,14 +2,21 @@ package es.elultimorey.forocoches;
 
 import java.util.LinkedList;
 
+import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.DownloadManager;
+import android.app.DownloadManager.Request;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.util.Log;
+import android.view.ContextMenu;
+import android.view.ContextMenu.ContextMenuInfo;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -40,7 +47,7 @@ public class ForoCochesActivity extends Activity {
 
 	ImageButton firstShorcurt;
 	ImageButton secondShorcurt;
-
+	
 	/** Called when the activity is first created. */
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -50,24 +57,32 @@ public class ForoCochesActivity extends Activity {
 		setContentView(R.layout.main);
 
 		webView = (WebView) findViewById(R.id.webview);
+		this.registerForContextMenu(webView);
 		mProgressBar = (ProgressBar) findViewById(R.id.ProgressBar);
 		mProgressBarCircle = (ProgressBar) findViewById(R.id.progress_bar_circle);
 		final ImageView lexus = (ImageView) findViewById(R.id.lexus_home);
 		firstShorcurt = (ImageButton) findViewById(R.id.first);
 		secondShorcurt = (ImageButton) findViewById(R.id.second);
 		final ImageButton reload = (ImageButton) findViewById(R.id.actualizar);
-		
+
 		webView.getSettings().setBuiltInZoomControls(true);
 		webView.getSettings().setSavePassword(true);
-		
+
 		cargarPreferencias();
 
 		webView.loadUrl(miURLHandler.getURL());
 
-		webView.setWebViewClient(new WebViewClient());
+		webView.setWebViewClient(new WebViewClient() {
+			@Override
+			public void onReceivedError(WebView view, int errorCode, String description, String failingUrl) {
+				Log.i("WEB_VIEW_TEST", "error code:" + errorCode);
+				super.onReceivedError(view, errorCode, description, failingUrl);
+				view.loadUrl("file:///android_asset/net/net-error.html");
+			}
+		});
 
 		webView.setWebChromeClient(new WebChromeClient() {
-			public void onProgressChanged(WebView view, int progress) {
+			public void onProgressChanged(WebView view, int progress) {				
 				mProgressBar.setVisibility(0);
 				mProgressBar.setProgress(progress);
 
@@ -75,12 +90,10 @@ public class ForoCochesActivity extends Activity {
 				mProgressBarCircle.setProgress(progress);
 				if (progress == 100) 
 					mProgressBarCircle.setVisibility(100);
-
 			}
 		});
-
 		lexus.setOnTouchListener(new View.OnTouchListener() {
-			
+
 			@Override
 			public boolean onTouch(View v, MotionEvent event) {
 				if(event.getAction()==MotionEvent.ACTION_DOWN) 
@@ -90,25 +103,25 @@ public class ForoCochesActivity extends Activity {
 				return false;
 			}
 		});
-		
+
 		lexus.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
 				webView.loadUrl(miURLHandler.getURL());
 			}
 		});
-		
+
 		lexus.setOnLongClickListener(new View.OnLongClickListener() {
-			
+
 			@Override
 			public boolean onLongClick(View v) {
 				openZonasDialog();
 				return false;
 			}
 		});
-		
+
 		TableRow tr = (TableRow) findViewById(R.id.TR02);
 		tr.setOnClickListener(new View.OnClickListener() {
-			
+
 			@Override
 			public void onClick(View v) {
 				toTop();
@@ -149,7 +162,12 @@ public class ForoCochesActivity extends Activity {
 					reload.setBackgroundResource(R.drawable.bar_button_touch);
 				else if(event.getAction()==MotionEvent.ACTION_UP) {
 					reload.setBackgroundResource(R.drawable.bar_button_normal);
-					webView.reload();
+					Log.i("RELOAD URL", webView.getUrl()); 
+					if (webView.getUrl().equals("file:///android_asset/net/net-error.html")) {
+						webView.goBack();
+					}
+					else
+						webView.reload();
 				}
 				return false;
 			}
@@ -159,10 +177,10 @@ public class ForoCochesActivity extends Activity {
 
 	@Override
 	public void onPause() {
-        super.onPause();
-        SharedPreferences.Editor ed = mPrefs.edit();
-        ed.putString("url_pause", webView.getUrl());
-        ed.commit();
+		super.onPause();
+		SharedPreferences.Editor ed = mPrefs.edit();
+		ed.putString("url_pause", webView.getUrl());
+		ed.commit();
 	}
 
 	@Override
@@ -170,7 +188,7 @@ public class ForoCochesActivity extends Activity {
 		super.onRestart();
 		webView.loadUrl(mPrefs.getString("url_pause", new URLHandler(this).getURL()));
 	}
-	
+
 	@Override
 	public void onResume() {
 		super.onResume();
@@ -198,6 +216,22 @@ public class ForoCochesActivity extends Activity {
 		inflater.inflate(R.menu.menu, menu);
 
 		return true;
+	}
+	
+	@Override
+	public void onCreateContextMenu(ContextMenu menu, View v, ContextMenuInfo menuInfo) {
+	    if (v instanceof WebView) {                
+	        WebView.HitTestResult result = ((WebView) v).getHitTestResult();
+
+	        if (result != null) {
+	            int type = result.getType();
+	            // Confirm type is an image
+	            if (type == WebView.HitTestResult.IMAGE_TYPE || type == WebView.HitTestResult.SRC_IMAGE_ANCHOR_TYPE) {
+	                String imageUrl = result.getExtra();
+	                openSaveImage(imageUrl);
+	            }
+	        }
+	    }
 	}
 
 	@Override
@@ -227,7 +261,7 @@ public class ForoCochesActivity extends Activity {
 	@Override
 	public boolean onSearchRequested() {
 		return true;
-		
+
 	}
 
 	@Override
@@ -240,7 +274,7 @@ public class ForoCochesActivity extends Activity {
 			webView.loadUrl(miURLHandler.buscar());
 		return super.onKeyDown(keyCode, event);
 	}
-	
+
 	public void openZonasDialog() {
 		final CharSequence[] items = {"Zona General", "Zona Forocoches", "Zona Técnica & Info", "Zona Misc.", "Zona Comercial", "Otros"};
 		AlertDialog.Builder builder = new AlertDialog.Builder(this)
@@ -327,6 +361,7 @@ public class ForoCochesActivity extends Activity {
 		LinkedList<CharSequence> listItems = new LinkedList<CharSequence>();
 		listItems.addLast("Buscar");
 		listItems.addLast("Compartir");
+		listItems.addLast("Temas de hoy");
 		// Evita 'Force Close' si se pulsa y aún no hay url en webView
 		final String url;
 		if (webView.getUrl() != null)
@@ -353,10 +388,15 @@ public class ForoCochesActivity extends Activity {
 					webView.loadUrl(miURLHandler.buscar());
 				else if (items[item].equals("Compartir"))
 					openCompartir();
+				else if (items[item].equals("Temas de hoy"))
+					webView.loadUrl(miURLHandler.temasHoy());
 				else if (items[item].equals("Responder"))
 					webView.loadUrl(miURLHandler.responer(url));
-				else if (items[item].equals("Suscribir"))
+				else if (items[item].equals("Suscribir")) {
+					Log.e("SUSCRIBIR", url);
+					Log.e("SUSCRIBIR", miURLHandler.suscribir(url));
 					webView.loadUrl(miURLHandler.suscribir(url));
+				}
 				else if (items[item].equals("Nuevo Tema"))
 					webView.loadUrl(miURLHandler.nuevoTema(url));
 			}
@@ -535,14 +575,46 @@ public class ForoCochesActivity extends Activity {
 		AlertDialog alert = builder.create();
 		alert.show();
 	}
+	
+	@TargetApi(Build.VERSION_CODES.GINGERBREAD) public void openSaveImage(final String url) {
+		final CharSequence[] items = {"Abrir", "Abrir en el navegador", "Guardar"};
+		AlertDialog.Builder builder = new AlertDialog.Builder(this)
+		.setTitle("Imagen")
+		.setIcon(R.drawable.ic_ad_herramientas)
+		.setItems(items, new DialogInterface.OnClickListener() {
+			@Override
+			public void onClick(DialogInterface dialog, int which) {
+				switch (which) {
+				case 0: webView.loadUrl(url);
+				break;
+				case 1: Intent i = new Intent(Intent.ACTION_VIEW); 
+						i.setData(Uri.parse(url));
+						startActivity(i);
+				break;
+				case 2: DownloadManager dm = (DownloadManager) getSystemService(DOWNLOAD_SERVICE);
+		        		Request request = new Request(Uri.parse(url));
+		        		notificationVisible(request);
+		        		dm.enqueue(request);
+				break;
+				}
+			}
+		});
+
+		AlertDialog alert = builder.create();
+		alert.show();
+	}
+	
+	@TargetApi(Build.VERSION_CODES.HONEYCOMB) private void notificationVisible(Request request) {
+		request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
+	}
 
 	private void cargarPreferencias() {
 		mPrefs = PreferenceManager.getDefaultSharedPreferences(this);
 
 		String fs = mPrefs.getString("first_shortcurt_pref", "default");
-		
+
 		Log.d("FS", fs);
-		
+
 		if (fs.equals("panel_usuario")) {
 			firstEnum = EnumShortcut.PANEL_U;
 			firstShorcurt.setImageResource(R.drawable.ic_bar_usuario);
@@ -583,6 +655,10 @@ public class ForoCochesActivity extends Activity {
 			firstEnum = EnumShortcut.COMPARTIR;
 			firstShorcurt.setImageResource(R.drawable.ic_bar_compartir);
 		}
+		else if (fs.equals("temas_de_hoy")) {		
+			firstEnum = EnumShortcut.TEMAS_HOY;
+			firstShorcurt.setImageResource(R.drawable.ic_bar_hoy);
+		}
 		else if (fs.equals("adelante")) {	
 			firstEnum = EnumShortcut.ADELANTE;
 			firstShorcurt.setImageResource(R.drawable.ic_bar_adelante);
@@ -599,7 +675,7 @@ public class ForoCochesActivity extends Activity {
 		String ss = mPrefs.getString("second_shortcurt_pref", "default");
 
 		Log.d("SS", ss);
-		
+
 		if (ss.equals("panel_usuario")) {
 			secondEnum = EnumShortcut.PANEL_U;
 			secondShorcurt.setImageResource(R.drawable.ic_bar_usuario);
@@ -640,6 +716,10 @@ public class ForoCochesActivity extends Activity {
 			secondEnum = EnumShortcut.COMPARTIR;
 			secondShorcurt.setImageResource(R.drawable.ic_bar_compartir);
 		}
+		else if (ss.equals("temas_de_hoy")) {		
+			secondEnum = EnumShortcut.TEMAS_HOY;
+			secondShorcurt.setImageResource(R.drawable.ic_bar_hoy);
+		}
 		else if (ss.equals("adelante")) {	
 			secondEnum = EnumShortcut.ADELANTE;
 			secondShorcurt.setImageResource(R.drawable.ic_bar_adelante);
@@ -652,23 +732,23 @@ public class ForoCochesActivity extends Activity {
 			secondEnum = EnumShortcut.DEFECTO_SECOND;
 			secondShorcurt.setImageResource(R.drawable.ic_bar_herramientas);
 		}
-		
+
 		webView.getSettings().setJavaScriptEnabled(mPrefs.getBoolean("pref_navegacion_javascript", false));
-		
+
 		if (miURLHandler.verVersionCompleta(mPrefs.getBoolean("pref_navegacion_completa", false))) 
 			webView.loadUrl(miURLHandler.renovarURL(webView.getUrl()));
 
 	}
-	
 
-	
+
+
 	private void shorcurtAction(EnumShortcut action) {
 		String url;
 		if (webView.getUrl() == null)
 			url = miURLHandler.getURL();
 		else
 			url = webView.getUrl();
-		
+
 		switch(action) {
 		case DEFECTO_FIRST:
 			openPanelUsuarioDialog();
@@ -711,6 +791,9 @@ public class ForoCochesActivity extends Activity {
 			break;
 		case COMPARTIR:
 			openCompartir();
+			break;
+		case TEMAS_HOY:
+			webView.loadUrl(miURLHandler.temasHoy());
 			break;
 		case ADELANTE:
 			if(webView.canGoForward())
