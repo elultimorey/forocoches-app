@@ -47,7 +47,7 @@ public class ForoCochesActivity extends Activity {
 
 	ImageButton firstShorcurt;
 	ImageButton secondShorcurt;
-	
+
 	/** Called when the activity is first created. */
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -217,21 +217,16 @@ public class ForoCochesActivity extends Activity {
 
 		return true;
 	}
-	
+
 	@Override
 	public void onCreateContextMenu(ContextMenu menu, View v, ContextMenuInfo menuInfo) {
-	    if (v instanceof WebView) {                
-	        WebView.HitTestResult result = ((WebView) v).getHitTestResult();
+		if (v instanceof WebView) {                
+			WebView.HitTestResult result = ((WebView) v).getHitTestResult();
 
-	        if (result != null) {
-	            int type = result.getType();
-	            // Confirm type is an image
-	            if (type == WebView.HitTestResult.IMAGE_TYPE || type == WebView.HitTestResult.SRC_IMAGE_ANCHOR_TYPE) {
-	                String imageUrl = result.getExtra();
-	                openSaveImage(imageUrl);
-	            }
-	        }
-	    }
+			if (result != null) {
+				openMenuContextURL(result.getExtra(), result.getType());
+			}
+		}
 	}
 
 	@Override
@@ -407,12 +402,20 @@ public class ForoCochesActivity extends Activity {
 	}
 
 	public void openCompartir() {
+		openCompartir(webView.getUrl(), webView.getTitle());
+	}
+
+	/**
+	 * 
+	 * @param url url a compartir
+	 * @param title titulo de la url a compartir, null si no hay titulo
+	 */
+	public void openCompartir(String url, String title) {
 		Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
 		sharingIntent.setType("text/plain");
-		String shareBody = webView.getUrl().replace("//m.", "//www.");
-		sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, webView.getTitle());
-		Log.d("TITULO", webView.getTitle());
-		sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, shareBody);
+		if (title!=null)
+			sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, title);
+		sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT,url.replace("//m.", "//www."));
 		startActivity(Intent.createChooser(sharingIntent, "Compartir"));
 	}
 
@@ -575,35 +578,60 @@ public class ForoCochesActivity extends Activity {
 		AlertDialog alert = builder.create();
 		alert.show();
 	}
-	
-	@TargetApi(Build.VERSION_CODES.GINGERBREAD) public void openSaveImage(final String url) {
-		final CharSequence[] items = {"Abrir", "Abrir en el navegador", "Guardar"};
-		AlertDialog.Builder builder = new AlertDialog.Builder(this)
-		.setTitle("Imagen")
-		.setIcon(R.drawable.ic_ad_herramientas)
-		.setItems(items, new DialogInterface.OnClickListener() {
-			@Override
-			public void onClick(DialogInterface dialog, int which) {
-				switch (which) {
-				case 0: webView.loadUrl(url);
-				break;
-				case 1: Intent i = new Intent(Intent.ACTION_VIEW); 
-						i.setData(Uri.parse(url));
-						startActivity(i);
-				break;
-				case 2: DownloadManager dm = (DownloadManager) getSystemService(DOWNLOAD_SERVICE);
-		        		Request request = new Request(Uri.parse(url));
-		        		notificationVisible(request);
-		        		dm.enqueue(request);
-				break;
-				}
-			}
-		});
 
-		AlertDialog alert = builder.create();
-		alert.show();
+	public void openMenuContextURL(final String url, int type) {
+		final LinkedList<CharSequence> listItems = new LinkedList<CharSequence>();
+		listItems.addLast("Abrir");
+		listItems.addLast("Abrir en el navegador");
+		listItems.addLast("Compartir");
+		AlertDialog.Builder builder = new AlertDialog.Builder(this)
+		.setIcon(R.drawable.ic_ad_herramientas);
+		String title;
+		if (type != WebView.HitTestResult.UNKNOWN_TYPE) {
+			Log.e("###############", "################");
+			if (type == WebView.HitTestResult.IMAGE_TYPE || type == WebView.HitTestResult.SRC_IMAGE_ANCHOR_TYPE) {
+				title = "Imagen";
+				listItems.addLast("Guardar");
+			}
+			else
+				title = "Url";
+			builder.setTitle(title);
+			final CharSequence[] items = new CharSequence[listItems.size()];
+			for (int i = 0; i < listItems.size(); i++) 
+				items[i]=listItems.get(i);
+
+			Log.e("###############", "################2");
+			builder.setItems(items, new DialogInterface.OnClickListener() {
+				@Override
+				public void onClick(DialogInterface dialog, int which) {
+					switch (which) {
+					case 0: webView.loadUrl(url);
+					break;
+					case 1: Intent i = new Intent(Intent.ACTION_VIEW); 
+					i.setData(Uri.parse(url));
+					startActivity(i);
+					break;
+					case 2:	openCompartir(url, null);
+					break;					
+					case 3: downloadImage(url);
+					break;
+					}
+				}
+			});
+
+			AlertDialog alert = builder.create();
+			alert.show();
+
+			Log.e("###############", "################3");
+		}
 	}
-	
+
+	@TargetApi(Build.VERSION_CODES.GINGERBREAD) private void downloadImage(String url) {
+		DownloadManager dm = (DownloadManager) getSystemService(DOWNLOAD_SERVICE);
+		Request request = new Request(Uri.parse(url));
+		notificationVisible(request);
+		dm.enqueue(request);
+	}
 	@TargetApi(Build.VERSION_CODES.HONEYCOMB) private void notificationVisible(Request request) {
 		request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
 	}
