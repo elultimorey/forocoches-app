@@ -7,6 +7,8 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.DownloadManager;
 import android.app.DownloadManager.Request;
+import android.content.ClipboardManager;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -222,10 +224,9 @@ public class ForoCochesActivity extends Activity {
 	public void onCreateContextMenu(ContextMenu menu, View v, ContextMenuInfo menuInfo) {
 		if (v instanceof WebView) {                
 			WebView.HitTestResult result = ((WebView) v).getHitTestResult();
-
-			if (result != null) {
+			if (result != null && result.getExtra()!=null) 
 				openMenuContextURL(result.getExtra(), result.getType());
-			}
+
 		}
 	}
 
@@ -583,47 +584,45 @@ public class ForoCochesActivity extends Activity {
 		final LinkedList<CharSequence> listItems = new LinkedList<CharSequence>();
 		listItems.addLast("Abrir");
 		listItems.addLast("Abrir en el navegador");
+		listItems.addLast("Copiar enlace");
 		listItems.addLast("Compartir");
 		AlertDialog.Builder builder = new AlertDialog.Builder(this)
 		.setIcon(R.drawable.ic_ad_herramientas);
 		String title;
-		if (type != WebView.HitTestResult.UNKNOWN_TYPE) {
-			Log.e("###############", "################");
-			if (type == WebView.HitTestResult.IMAGE_TYPE || type == WebView.HitTestResult.SRC_IMAGE_ANCHOR_TYPE) {
-				title = "Imagen";
-				listItems.addLast("Guardar");
-			}
-			else
-				title = "Url";
-			builder.setTitle(title);
-			final CharSequence[] items = new CharSequence[listItems.size()];
-			for (int i = 0; i < listItems.size(); i++) 
-				items[i]=listItems.get(i);
-
-			Log.e("###############", "################2");
-			builder.setItems(items, new DialogInterface.OnClickListener() {
-				@Override
-				public void onClick(DialogInterface dialog, int which) {
-					switch (which) {
-					case 0: webView.loadUrl(url);
-					break;
-					case 1: Intent i = new Intent(Intent.ACTION_VIEW); 
-					i.setData(Uri.parse(url));
-					startActivity(i);
-					break;
-					case 2:	openCompartir(url, null);
-					break;					
-					case 3: downloadImage(url);
-					break;
-					}
-				}
-			});
-
-			AlertDialog alert = builder.create();
-			alert.show();
-
-			Log.e("###############", "################3");
+		if (type == WebView.HitTestResult.IMAGE_TYPE || type == WebView.HitTestResult.SRC_IMAGE_ANCHOR_TYPE) {
+			title = "Imagen";
+			listItems.addLast("Guardar");
 		}
+		else
+			title = "Enlace";
+		builder.setTitle(title);
+		final CharSequence[] items = new CharSequence[listItems.size()];
+		for (int i = 0; i < listItems.size(); i++) 
+			items[i]=listItems.get(i);
+
+		builder.setItems(items, new DialogInterface.OnClickListener() {
+			@Override
+			public void onClick(DialogInterface dialog, int which) {
+				switch (which) {
+				case 0: webView.loadUrl(url);
+				break;
+				case 1: Intent i = new Intent(Intent.ACTION_VIEW); 
+						i.setData(Uri.parse(url));
+						startActivity(i);
+				break;
+				case 2: copiarURL(url);
+				break;
+				case 3:	openCompartir(url, null);
+				break;	
+				case 4: downloadImage(url);
+				break;
+				}
+			}
+		});
+
+		AlertDialog alert = builder.create();
+		alert.show();
+
 	}
 
 	@TargetApi(Build.VERSION_CODES.GINGERBREAD) private void downloadImage(String url) {
@@ -635,6 +634,20 @@ public class ForoCochesActivity extends Activity {
 	@TargetApi(Build.VERSION_CODES.HONEYCOMB) private void notificationVisible(Request request) {
 		request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
 	}
+	private void copiarURL(String url) {
+		if(android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.HONEYCOMB) {
+		    android.text.ClipboardManager clipboard = (android.text.ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
+		    clipboard.setText(url);
+		} else 
+			copiarURLHoneycomb(url);
+	}
+
+	@TargetApi(Build.VERSION_CODES.HONEYCOMB) private void copiarURLHoneycomb(String url) {
+		android.content.ClipboardManager clipboard = (android.content.ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
+	    android.content.ClipData clip = android.content.ClipData.newPlainText("Enlace copiado", url);
+	    clipboard.setPrimaryClip(clip);
+	}
+	
 
 	private void cargarPreferencias() {
 		mPrefs = PreferenceManager.getDefaultSharedPreferences(this);
