@@ -49,10 +49,15 @@ public class ForoCochesActivity extends Activity {
 
 	ImageButton firstShorcurt;
 	ImageButton secondShorcurt;
+	
 
 	/** Called when the activity is first created. */
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
+		if (Build.VERSION.SDK_INT < Build.VERSION_CODES.HONEYCOMB)
+			setTheme(android.R.style.Theme_Light);
+		else 
+			setTheme(android.R.style.Theme_Holo_Light);  
 		super.onCreate(savedInstanceState);
 		this.getWindow().requestFeature(Window.FEATURE_PROGRESS);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);

@@ -23,6 +23,7 @@
                 <action android:name="android.intent.action.VIEW"></action>
                 <category android:name="android.intent.category.DEFAULT"></category>
             </intent-filter>
+            
         </activity>
         <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="ContactoActivity" android:label="@string/contacto_comentarios"></activity>
         <activity android:name="AyudaActivity" android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/ayuda_activity"></activity>
