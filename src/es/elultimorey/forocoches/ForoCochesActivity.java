@@ -220,6 +220,21 @@ public class ForoCochesActivity extends Activity {
 		return true;
 	}
 
+	private AlertDialog.Builder getBuilder() {
+		if (Build.VERSION.SDK_INT < Build.VERSION_CODES.HONEYCOMB)
+			return getBuilderNoHoneycomb();
+		else 
+			return getBuilderHoneycomb();
+	}
+
+	private AlertDialog.Builder getBuilderNoHoneycomb() {
+		return new AlertDialog.Builder(this);
+	}
+	@TargetApi(Build.VERSION_CODES.HONEYCOMB)
+	private AlertDialog.Builder getBuilderHoneycomb() {
+		return new AlertDialog.Builder(this, AlertDialog.THEME_HOLO_LIGHT);
+	}
+
 	@Override
 	public void onCreateContextMenu(ContextMenu menu, View v, ContextMenuInfo menuInfo) {
 		if (v instanceof WebView) {                
@@ -271,30 +286,31 @@ public class ForoCochesActivity extends Activity {
 		return super.onKeyDown(keyCode, event);
 	}
 
+
 	public void openZonasDialog() {
 		final CharSequence[] items = {"Zona General", "Zona Forocoches", "Zona Técnica & Info", "Zona Misc.", "Zona Comercial", "Otros"};
-		AlertDialog.Builder builder = new AlertDialog.Builder(this)
-		.setTitle("Ir a...")
-		.setIcon(R.drawable.ic_ad_herramientas)
-		.setItems(items, new DialogInterface.OnClickListener() {
-			@Override
-			public void onClick(DialogInterface dialog, int which) {
-				switch (which) {
-				case 0: openZGeneral();
-				break;
-				case 1: openZForocoches();
-				break;
-				case 2: openZTecnica();
-				break;
-				case 3: openZMisc();
-				break;
-				case 4: openZComercial();
-				break;
-				case 5: openZOtros();
-				break;
-				}
-			}
-		});
+		AlertDialog.Builder builder = getBuilder()
+				.setTitle("Ir a...")
+				.setIcon(R.drawable.ic_ad_herramientas)
+				.setItems(items, new DialogInterface.OnClickListener() {
+					@Override
+					public void onClick(DialogInterface dialog, int which) {
+						switch (which) {
+						case 0: openZGeneral();
+						break;
+						case 1: openZForocoches();
+						break;
+						case 2: openZTecnica();
+						break;
+						case 3: openZMisc();
+						break;
+						case 4: openZComercial();
+						break;
+						case 5: openZOtros();
+						break;
+						}
+					}
+				});
 
 		AlertDialog alert = builder.create();
 		alert.show();
@@ -304,7 +320,7 @@ public class ForoCochesActivity extends Activity {
 	public void openPanelUsuarioDialog(){
 		final CharSequence[] items = {"Menciones", "Mensajes Privados", "Temas suscritos", "Temas suscritos con novedades"};
 
-		AlertDialog.Builder builder = new AlertDialog.Builder(this)
+		AlertDialog.Builder builder = getBuilder()
 		.setTitle(R.string.dialog_user_title)
 		.setIcon(R.drawable.ic_ad_usuario)
 		.setItems(items, new DialogInterface.OnClickListener() {
@@ -330,7 +346,7 @@ public class ForoCochesActivity extends Activity {
 
 	public void openMenciones() {
 		if (mPrefs.getString("user_name", "#").equals("#")) {
-			AlertDialog.Builder alertDialog = new AlertDialog.Builder(this);
+			AlertDialog.Builder alertDialog = getBuilder();
 			alertDialog.setTitle("Menciones");
 			alertDialog.setIcon(R.drawable.ic_ad_usuario);
 			alertDialog.setMessage("Escribe tu nombre de usuario para conocer quien te ha mencionado");
@@ -375,7 +391,7 @@ public class ForoCochesActivity extends Activity {
 		for (int i = 0; i < listItems.size(); i++) 
 			items[i]=listItems.get(i);
 
-		AlertDialog.Builder builder = new AlertDialog.Builder(this)
+		AlertDialog.Builder builder = getBuilder()
 		.setTitle(R.string.dialog_herramientas_title)
 		.setIcon(R.drawable.ic_ad_herramientas)
 		.setItems(items, new DialogInterface.OnClickListener() {
@@ -422,7 +438,7 @@ public class ForoCochesActivity extends Activity {
 
 	public void openZGeneral() {
 		final CharSequence[] items = {"General", "Electrónica/Informática", "Empleo", "Viajes", "Quedadas (KDD)"};
-		AlertDialog.Builder builder = new AlertDialog.Builder(this)
+		AlertDialog.Builder builder = getBuilder()
 		.setTitle("Zona General")
 		.setIcon(R.drawable.ic_ad_herramientas)
 		.setItems(items, new DialogInterface.OnClickListener() {
@@ -449,7 +465,7 @@ public class ForoCochesActivity extends Activity {
 
 	public void openZForocoches() {
 		final CharSequence[] items = {"Forocoches", "Competición", "Clásicos", "Monovolumenes", "4x4/Ocio", "Camiones/Autobuses", "Motos"};
-		AlertDialog.Builder builder = new AlertDialog.Builder(this)
+		AlertDialog.Builder builder = getBuilder()
 		.setTitle("Zona Forocoches")
 		.setIcon(R.drawable.ic_ad_herramientas)
 		.setItems(items, new DialogInterface.OnClickListener() {
@@ -480,7 +496,7 @@ public class ForoCochesActivity extends Activity {
 
 	public void openZTecnica() {
 		final CharSequence[] items = {"Mecánica", "Car-Audio", "Seguros", "Tráfico/Radares", "Tuning"};
-		AlertDialog.Builder builder = new AlertDialog.Builder(this)
+		AlertDialog.Builder builder = getBuilder()
 		.setTitle("Zona Técnica & Info")
 		.setIcon(R.drawable.ic_ad_herramientas)
 		.setItems(items, new DialogInterface.OnClickListener() {
@@ -507,7 +523,7 @@ public class ForoCochesActivity extends Activity {
 
 	public void openZMisc() {
 		final CharSequence[] items = {"Modelismo", "Tuning Digital", "Juegos de Coches", "Juegos Online"};
-		AlertDialog.Builder builder = new AlertDialog.Builder(this)
+		AlertDialog.Builder builder = getBuilder()
 		.setTitle("Zona Misc.")
 		.setIcon(R.drawable.ic_ad_herramientas)
 		.setItems(items, new DialogInterface.OnClickListener() {
@@ -533,7 +549,7 @@ public class ForoCochesActivity extends Activity {
 
 	public void openZComercial() {
 		final CharSequence[] items = {"Compra - Venta Profesional", "Compra - Venta Motor", "Compra - Venta Audio/Tuning", "Compra - Venta Electrónica", "Compra - Venta Otros"};
-		AlertDialog.Builder builder = new AlertDialog.Builder(this)
+		AlertDialog.Builder builder = getBuilder()
 		.setTitle("Zona Comercial")
 		.setIcon(R.drawable.ic_ad_herramientas)
 		.setItems(items, new DialogInterface.OnClickListener() {
@@ -561,7 +577,7 @@ public class ForoCochesActivity extends Activity {
 
 	public void openZOtros() {
 		final CharSequence[] items = {"Info/Ayuda", "Pruebas"};
-		AlertDialog.Builder builder = new AlertDialog.Builder(this)
+		AlertDialog.Builder builder = getBuilder()
 		.setTitle("Zona Otros")
 		.setIcon(R.drawable.ic_ad_herramientas)
 		.setItems(items, new DialogInterface.OnClickListener() {
@@ -586,7 +602,7 @@ public class ForoCochesActivity extends Activity {
 		listItems.addLast("Abrir en el navegador");
 		listItems.addLast("Copiar enlace");
 		listItems.addLast("Compartir");
-		AlertDialog.Builder builder = new AlertDialog.Builder(this)
+		AlertDialog.Builder builder = getBuilder()
 		.setIcon(R.drawable.ic_ad_herramientas);
 		String title;
 		if (type == WebView.HitTestResult.IMAGE_TYPE || type == WebView.HitTestResult.SRC_IMAGE_ANCHOR_TYPE) {
@@ -607,8 +623,8 @@ public class ForoCochesActivity extends Activity {
 				case 0: webView.loadUrl(url);
 				break;
 				case 1: Intent i = new Intent(Intent.ACTION_VIEW); 
-						i.setData(Uri.parse(url));
-						startActivity(i);
+				i.setData(Uri.parse(url));
+				startActivity(i);
 				break;
 				case 2: copiarURL(url);
 				break;
@@ -636,18 +652,18 @@ public class ForoCochesActivity extends Activity {
 	}
 	private void copiarURL(String url) {
 		if(android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.HONEYCOMB) {
-		    android.text.ClipboardManager clipboard = (android.text.ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
-		    clipboard.setText(url);
+			android.text.ClipboardManager clipboard = (android.text.ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
+			clipboard.setText(url);
 		} else 
 			copiarURLHoneycomb(url);
 	}
 
 	@TargetApi(Build.VERSION_CODES.HONEYCOMB) private void copiarURLHoneycomb(String url) {
 		android.content.ClipboardManager clipboard = (android.content.ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
-	    android.content.ClipData clip = android.content.ClipData.newPlainText("Enlace copiado", url);
-	    clipboard.setPrimaryClip(clip);
+		android.content.ClipData clip = android.content.ClipData.newPlainText("Enlace copiado", url);
+		clipboard.setPrimaryClip(clip);
 	}
-	
+
 
 	private void cargarPreferencias() {
 		mPrefs = PreferenceManager.getDefaultSharedPreferences(this);
