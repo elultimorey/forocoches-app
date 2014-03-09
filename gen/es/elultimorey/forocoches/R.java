@@ -96,6 +96,8 @@ public final class R {
         public static final int Aceptar=0x7f070002;
         public static final int Cancelar=0x7f070003;
         public static final int acerca_activity=0x7f070007;
+        public static final int acerca_disclaimer=0x7f070029;
+        public static final int acerca_disclaimer_text=0x7f07002a;
         public static final int acerca_normas=0x7f070028;
         /**  Acerca de 
          */
@@ -106,18 +108,18 @@ public final class R {
         public static final int app_name=0x7f070000;
         public static final int app_version=0x7f070001;
         public static final int ayuda_activity=0x7f070006;
-        public static final int ayuda_img=0x7f07002e;
-        public static final int ayuda_img_text=0x7f07002f;
-        public static final int ayuda_menciones=0x7f070030;
-        public static final int ayuda_menciones_text=0x7f070031;
-        public static final int ayuda_text_buttons=0x7f07002d;
-        public static final int ayuda_text_comments=0x7f070032;
-        public static final int ayuda_text_shortcurts=0x7f07002c;
-        public static final int ayuda_title_buttons=0x7f07002a;
-        public static final int ayuda_title_comments=0x7f07002b;
+        public static final int ayuda_img=0x7f070030;
+        public static final int ayuda_img_text=0x7f070031;
+        public static final int ayuda_menciones=0x7f070032;
+        public static final int ayuda_menciones_text=0x7f070033;
+        public static final int ayuda_text_buttons=0x7f07002f;
+        public static final int ayuda_text_comments=0x7f070034;
+        public static final int ayuda_text_shortcurts=0x7f07002e;
+        public static final int ayuda_title_buttons=0x7f07002c;
+        public static final int ayuda_title_comments=0x7f07002d;
         /**  Ayuda 
          */
-        public static final int ayuda_title_shortcurts=0x7f070029;
+        public static final int ayuda_title_shortcurts=0x7f07002b;
         public static final int contacto_comentarios=0x7f070008;
         public static final int dialog_herramientas_title=0x7f070005;
         public static final int dialog_user_title=0x7f070004;

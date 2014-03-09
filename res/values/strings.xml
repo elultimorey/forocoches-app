@@ -55,6 +55,8 @@
     <string name="acerca_text">\tAplicación, no oficial, para android del foro ForoCoches.\n\tEsta aplicación utiliza el navegador del teléfono, carga la dirección "m.forocoches.com".\n  Las contraseñas no son guardadas por la aplicación si no por el navegador proporcionado por el sistema. Por esta razón en "Menciones" has de introducir tu usuario\n  Esta aplicación implementa Accesos Directos que pueden realizarse en el navegador, simplemente ayuda a que sea más sencilla la navegación.\n\tLa aplicación no tiene acceso a tus datos personales. Si no te fías de la aplicación y quieres el código fuente de la aplicación para echarle un ojo ponte en contacto conmigo y te indicaré como acceder a él.</string>
     <string name="acerca_text2">\tPara participar en el foro debes ser usuario registrado y debes aceptar las condiciones de uso y normas de comportamiento:</string>
   	<string name="acerca_normas"><u>Condiciones de uso y normas de comportamiento</u></string>
+  	<string name="acerca_disclaimer">Disclaimer</string>
+  	<string name="acerca_disclaimer_text">No soy responsable del contenido que ves en los diferentes hilos que puedas visitar.\nLa publicidad que puedas ver (con JavaScript activado) es añadida por el administrador (aka Electrick) del foro Forocoches en su propia web, yo no gano un duro con esto.</string>
     
     <!-- Ayuda -->
     <string name="ayuda_title_shortcurts">Accesos Directos:</string>
