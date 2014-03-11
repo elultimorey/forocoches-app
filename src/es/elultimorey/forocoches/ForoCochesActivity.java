@@ -323,7 +323,7 @@ public class ForoCochesActivity extends Activity {
 	}
 
 	public void openPanelUsuarioDialog(){
-		final CharSequence[] items = {"Menciones", "Mensajes Privados", "Temas suscritos", "Temas suscritos con novedades"};
+		final CharSequence[] items = {"Menciones", "Mensajes Privados", "Temas suscritos", "Temas suscritos con novedades", "Editar Avatar", "Editar Firma"};
 
 		AlertDialog.Builder builder = getBuilder()
 		.setTitle(R.string.dialog_user_title)
@@ -338,6 +338,11 @@ public class ForoCochesActivity extends Activity {
 				case 2: webView.loadUrl(miURLHandler.suscripciones());
 				break;
 				case 3: webView.loadUrl(miURLHandler.suscripcionesConNovedades());
+				break;
+				case 4: webView.loadUrl(miURLHandler.editarAvatar());
+				Log.e("#########3", miURLHandler.editarAvatar());
+				break;
+				case 5: webView.loadUrl(miURLHandler.editarFirma());
 				break;
 				default: break;
 				};

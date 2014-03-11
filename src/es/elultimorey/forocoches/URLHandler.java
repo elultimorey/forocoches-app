@@ -239,4 +239,13 @@ public class URLHandler {
 	public String normas() {
 		return "http://www.forocoches.com/index.php?p=normas";
 	}
+	
+	public String editarAvatar() {
+		return getURL() + "profile.php?do=editavatar";
+	}
+	
+	public String editarFirma() {
+		return getURL() + "profile.php?do=editsignature";
+	
+	}
 }
