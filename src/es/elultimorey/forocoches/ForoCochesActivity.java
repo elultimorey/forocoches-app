@@ -82,7 +82,6 @@ public class ForoCochesActivity extends Activity {
 		webView.setWebViewClient(new WebViewClient() {
 			@Override
 			public void onReceivedError(WebView view, int errorCode, String description, String failingUrl) {
-				Log.i("WEB_VIEW_TEST", "error code:" + errorCode);
 				super.onReceivedError(view, errorCode, description, failingUrl);
 				view.loadUrl("file:///android_asset/net/net-error.html");
 			}
@@ -169,7 +168,6 @@ public class ForoCochesActivity extends Activity {
 					reload.setBackgroundResource(R.drawable.bar_button_touch);
 				else if(event.getAction()==MotionEvent.ACTION_UP) {
 					reload.setBackgroundResource(R.drawable.bar_button_normal);
-					Log.i("RELOAD URL", webView.getUrl()); 
 					if (webView.getUrl().equals("file:///android_asset/net/net-error.html")) {
 						webView.goBack();
 					}
@@ -340,7 +338,6 @@ public class ForoCochesActivity extends Activity {
 				case 3: webView.loadUrl(miURLHandler.suscripcionesConNovedades());
 				break;
 				case 4: webView.loadUrl(miURLHandler.editarAvatar());
-				Log.e("#########3", miURLHandler.editarAvatar());
 				break;
 				case 5: webView.loadUrl(miURLHandler.editarFirma());
 				break;
@@ -415,8 +412,6 @@ public class ForoCochesActivity extends Activity {
 				else if (items[item].equals("Responder"))
 					webView.loadUrl(miURLHandler.responer(url));
 				else if (items[item].equals("Suscribir")) {
-					Log.e("SUSCRIBIR", url);
-					Log.e("SUSCRIBIR", miURLHandler.suscribir(url));
 					webView.loadUrl(miURLHandler.suscribir(url));
 				}
 				else if (items[item].equals("Nuevo Tema"))
@@ -680,7 +675,6 @@ public class ForoCochesActivity extends Activity {
 
 		String fs = mPrefs.getString("first_shortcurt_pref", "default");
 
-		Log.d("FS", fs);
 
 		if (fs.equals("panel_usuario")) {
 			firstEnum = EnumShortcut.PANEL_U;
@@ -740,8 +734,6 @@ public class ForoCochesActivity extends Activity {
 		}
 
 		String ss = mPrefs.getString("second_shortcurt_pref", "default");
-
-		Log.d("SS", ss);
 
 		if (ss.equals("panel_usuario")) {
 			secondEnum = EnumShortcut.PANEL_U;
