@@ -1,0 +1,1 @@
+/home/jose/AndroidStudioProjects/forocoches-app/app/build/intermediates/classes/debug
