@@ -6,6 +6,7 @@ import android.preference.PreferenceManager;
 
 public class URLHandler {
 
+    public final static String DOMAIN = "forocoches.com";
 	private final static String URL_M_FOROCOCHES = "http://m.forocoches.com/foro/";
 	private final static String URL_FOROCOCHES = "http://www.forocoches.com/foro/";
 	private boolean versionCompleta = false;
@@ -73,10 +74,14 @@ public class URLHandler {
 		return url;
 	}
 	
-	public String privados() {
-		return getURL() + "private.php?";
+	public String privadosEnviados() {
+		return getURL() + "private.php?s=&pp=50&folderid=-1";
 	}
-	
+
+    public String privadosRecibidos() {
+        return getURL() + "private.php?s=&pp=50&folderid=0";
+    }
+
 	public String suscripciones() {
 		return getURL() + "subscription.php?do=viewsubscription";
 	}

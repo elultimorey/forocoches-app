@@ -73,23 +73,15 @@ ADDED from AndroidManifest.xml:21:9
 		ADDED from AndroidManifest.xml:21:54
 	android:name
 		ADDED from AndroidManifest.xml:21:19
-activity#es.elultimorey.forocoches.ContactoActivity
+activity#es.elultimorey.forocoches.AyudaActivity
 ADDED from AndroidManifest.xml:28:9
 	android:label
-		ADDED from AndroidManifest.xml:28:111
+		ADDED from AndroidManifest.xml:28:108
 	android:configChanges
+		ADDED from AndroidManifest.xml:28:48
+	android:name
 		ADDED from AndroidManifest.xml:28:19
-	android:name
-		ADDED from AndroidManifest.xml:28:79
-activity#es.elultimorey.forocoches.AyudaActivity
-ADDED from AndroidManifest.xml:29:9
-	android:label
-		ADDED from AndroidManifest.xml:29:108
-	android:configChanges
-		ADDED from AndroidManifest.xml:29:48
-	android:name
-		ADDED from AndroidManifest.xml:29:19
 uses-permission#android.permission.INTERNET
-ADDED from AndroidManifest.xml:33:5
+ADDED from AndroidManifest.xml:32:5
 	android:name
-		ADDED from AndroidManifest.xml:33:22
+		ADDED from AndroidManifest.xml:32:22

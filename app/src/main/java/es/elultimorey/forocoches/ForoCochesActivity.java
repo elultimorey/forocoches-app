@@ -7,16 +7,15 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.DownloadManager;
 import android.app.DownloadManager.Request;
-import android.content.ClipboardManager;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
-import android.util.Log;
 import android.view.ContextMenu;
 import android.view.ContextMenu.ContextMenuInfo;
 import android.view.KeyEvent;
@@ -49,6 +48,7 @@ public class ForoCochesActivity extends Activity {
 
 	ImageButton firstShorcurt;
 	ImageButton secondShorcurt;
+    Context mContext = this;
 	
 
 	/** Called when the activity is first created. */
@@ -85,30 +85,80 @@ public class ForoCochesActivity extends Activity {
 				super.onReceivedError(view, errorCode, description, failingUrl);
 				view.loadUrl("file:///android_asset/net/net-error.html");
 			}
+
+            public void onPageStarted(WebView view, String url, Bitmap favicon) {
+                if (!url.contains(miURLHandler.DOMAIN)) {
+                    Intent i = new Intent(Intent.ACTION_VIEW);
+                    i.setData(Uri.parse(url));
+                    view.stopLoading();
+                    startActivity(i);
+                }
+                else {
+                    super.onPageStarted(view, url, favicon);
+                }
+            }
+
+            public void onLoadResource(WebView view, String url) {
+                super.onLoadResource(view, url);
+
+                view.loadUrl("javascript:(function() { " +
+                        "var videosYoutube = document.getElementsByClassName('video-youtube'); " +
+                        "document.title = videosYoutube.length; " +
+                        "})()");
+                int videos = 0;
+                try {
+                    videos = Integer.parseInt(view.getTitle());
+                    for (int i=0; i<videos; i++){
+                        view.loadUrl("javascript:(function() { " +
+                                "var videosYoutube = document.getElementsByClassName('video-youtube'); " +
+                                "var post = videosYoutube["+i+"].innerHTML.split('directYoutube/8982/'); " +
+                                "var codigo = post[1].split('/'); " +
+                                " videosYoutube["+i+"].innerHTML = '<a href=\"https://www.youtube.com/watch?v='+codigo[0]+'\"><img height=\"200px\" width=\"300px\" src=\"http://img.youtube.com/vi/'+codigo[0]+'/sddefault.jpg\"/></br><img height=\"25px\" width=\"25px\" src=\"http://3.bp.blogspot.com/-EldOzOuBVio/VNdKbGFS1ZI/AAAAAAAACaE/RzGeIu8etnY/s1600/makefg.png\"/></br>(Ver en YouTube)</a>';" +
+                                "})()");
+                    }
+                } catch (Exception e) {
+                    videos = 0;
+                }
+
+                view.loadUrl("javascript:(function() { " +
+                        "var videosYoutube = document.getElementsByClassName('video-youtube'); " +
+                        "document.title = videosYoutube.length; " +
+                        "})()");
+                videos = 0;
+                try {
+                    videos = Integer.parseInt(view.getTitle());
+                    for (int i=0; i<videos; i++){
+                        view.loadUrl("javascript:(function() { " +
+                                "var videosYoutube = document.getElementsByClassName('video-youtube'); " +
+                                "var post = videosYoutube["+i+"].innerHTML.split('www.youtube.com/embed/'); " +
+                                "var codigo = post[1].split('\"'); " +
+                                " videosYoutube["+i+"].innerHTML = '<a href=\"https://www.youtube.com/watch?v='+codigo[0]+'\"><img height=\"200px\" width=\"300px\" src=\"http://img.youtube.com/vi/'+codigo[0]+'/sddefault.jpg\"/></br><img height=\"25px\" width=\"25px\" src=\"http://3.bp.blogspot.com/-EldOzOuBVio/VNdKbGFS1ZI/AAAAAAAACaE/RzGeIu8etnY/s1600/makefg.png\"/></br>(Ver en YouTube)</a>';" +
+                                "})()");
+                    }
+                } catch (Exception e) {
+                    videos = 0;
+                }
+
+            }
+
+            @Override
+            public void onPageFinished(WebView view, String url) {
+
+            }
 		});
 
 		webView.setWebChromeClient(new WebChromeClient() {
-			public void onProgressChanged(WebView view, int progress) {				
-				mProgressBar.setVisibility(0);
+			public void onProgressChanged(WebView view, int progress) {
+				mProgressBar.setVisibility(View.VISIBLE);
 				mProgressBar.setProgress(progress);
 
-				mProgressBarCircle.setVisibility(0);
+				mProgressBarCircle.setVisibility(View.VISIBLE);
 				mProgressBarCircle.setProgress(progress);
-				if (progress == 100) 
-					mProgressBarCircle.setVisibility(100);
+				if (progress == 100)
+					mProgressBarCircle.setVisibility(View.INVISIBLE);
 			}
 		});
-		lexus.setOnTouchListener(new View.OnTouchListener() {
 
-			@Override
-			public boolean onTouch(View v, MotionEvent event) {
-				if(event.getAction()==MotionEvent.ACTION_DOWN) 
-					lexus.setImageResource(R.drawable.lexus_touch);
-				else if(event.getAction()==MotionEvent.ACTION_UP) 
-					lexus.setImageResource(R.drawable.lexus);
-				return false;
-			}
-		});
 
 		lexus.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
@@ -181,23 +231,11 @@ public class ForoCochesActivity extends Activity {
 	}
 
 	@Override
-	public void onPause() {
-		super.onPause();
-		SharedPreferences.Editor ed = mPrefs.edit();
-		ed.putString("url_pause", webView.getUrl());
-		ed.commit();
-	}
-
-	@Override
-	public void onRestart() {
-		super.onRestart();
-		webView.loadUrl(mPrefs.getString("url_pause", new URLHandler(this).getURL()));
-	}
-
-	@Override
 	public void onResume() {
+        if (!webView.getUrl().contains(miURLHandler.DOMAIN))
+            webView.goBack();
 		super.onResume();
-		cargarPreferencias();
+        cargarPreferencias();
 	}
 
 	@Override
@@ -321,30 +359,41 @@ public class ForoCochesActivity extends Activity {
 	}
 
 	public void openPanelUsuarioDialog(){
-		final CharSequence[] items = {"Menciones", "Mensajes Privados", "Temas suscritos", "Temas suscritos con novedades", "Editar Avatar", "Editar Firma"};
+		final CharSequence[] items = {"Menciones", "Mensajes Privados Enviados", "Mensajes Privados Recibidos", "Temas suscritos", "Temas suscritos con novedades", "Editar Avatar", "Editar Firma"};
 
 		AlertDialog.Builder builder = getBuilder()
 		.setTitle(R.string.dialog_user_title)
 		.setIcon(R.drawable.ic_ad_usuario)
 		.setItems(items, new DialogInterface.OnClickListener() {
-			public void onClick(DialogInterface dialog, int item) {
-				switch (item) {
-				case 0:	openMenciones();
-				break;
-				case 1: webView.loadUrl(miURLHandler.privados());
-				break;
-				case 2: webView.loadUrl(miURLHandler.suscripciones());
-				break;
-				case 3: webView.loadUrl(miURLHandler.suscripcionesConNovedades());
-				break;
-				case 4: webView.loadUrl(miURLHandler.editarAvatar());
-				break;
-				case 5: webView.loadUrl(miURLHandler.editarFirma());
-				break;
-				default: break;
-				};
-			}
-		});
+            public void onClick(DialogInterface dialog, int item) {
+                switch (item) {
+                    case 0:
+                        openMenciones();
+                        break;
+                    case 1:
+                        webView.loadUrl(miURLHandler.privadosEnviados());
+                        break;
+                    case 2:
+                        webView.loadUrl(miURLHandler.privadosRecibidos());
+                        break;
+                    case 3:
+                        webView.loadUrl(miURLHandler.suscripciones());
+                        break;
+                    case 4:
+                        webView.loadUrl(miURLHandler.suscripcionesConNovedades());
+                        break;
+                    case 5:
+                        webView.loadUrl(miURLHandler.editarAvatar());
+                        break;
+                    case 66:
+                        webView.loadUrl(miURLHandler.editarFirma());
+                        break;
+                    default:
+                        break;
+                }
+                ;
+            }
+        });
 
 		AlertDialog alert = builder.create();	
 
@@ -822,7 +871,7 @@ public class ForoCochesActivity extends Activity {
 			openMenciones();
 			break;
 		case PRIVADOS:
-			webView.loadUrl(miURLHandler.privados());
+			webView.loadUrl(miURLHandler.privadosRecibidos());
 			break;
 		case TEMAS_S:
 			webView.loadUrl(miURLHandler.suscripciones());
@@ -867,4 +916,5 @@ public class ForoCochesActivity extends Activity {
 	public void toTop() {
 		webView.scrollTo(0, 0);
 	}
+
 }
