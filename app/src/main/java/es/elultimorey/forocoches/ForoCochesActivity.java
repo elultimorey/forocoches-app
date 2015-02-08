@@ -77,8 +77,6 @@ public class ForoCochesActivity extends Activity {
 
 		cargarPreferencias();
 
-		webView.loadUrl(miURLHandler.getURL());
-
 		webView.setWebViewClient(new WebViewClient() {
 			@Override
 			public void onReceivedError(WebView view, int errorCode, String description, String failingUrl) {
@@ -159,6 +157,7 @@ public class ForoCochesActivity extends Activity {
 			}
 		});
 
+        webView.loadUrl(miURLHandler.getURL());
 
 		lexus.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
@@ -841,7 +840,7 @@ public class ForoCochesActivity extends Activity {
 			secondShorcurt.setImageResource(R.drawable.ic_bar_herramientas);
 		}
 
-		webView.getSettings().setJavaScriptEnabled(mPrefs.getBoolean("pref_navegacion_javascript", false));
+		webView.getSettings().setJavaScriptEnabled(mPrefs.getBoolean("pref_navegacion_javascript", true));
 
 		if (miURLHandler.verVersionCompleta(mPrefs.getBoolean("pref_navegacion_completa", false))) 
 			webView.loadUrl(miURLHandler.renovarURL(webView.getUrl()));
