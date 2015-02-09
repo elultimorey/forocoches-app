@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/home/jose/Android/forocoches-app/app/src/main/res/values/arrays.xml -->
+    <!-- From: file:/home/jose/mecagoenlafruta/forocoches-app/app/src/main/res/values/arrays.xml -->
     <eat-comment/>
     <string-array name="menciones">
 	    <item name="temas">Temas</item>
@@ -40,7 +40,7 @@
 		<item name="adelante">adelante</item>
 		<item name="atras">atras</item>
 	</string-array>
-    <!-- From: file:/home/jose/Android/forocoches-app/app/src/main/res/values/color.xml -->
+    <!-- From: file:/home/jose/mecagoenlafruta/forocoches-app/app/src/main/res/values/color.xml -->
     <eat-comment/>
     <color name="azul_link">#86c3ff</color>
     <color name="azul_twitter">#1bb9ec</color>
@@ -54,7 +54,7 @@
     <color name="button_touch_start">#D4D4D4</color>
     <color name="rojo_gmail">#e34300</color>
     <color name="white">#ffffff</color>
-    <!-- From: file:/home/jose/Android/forocoches-app/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/home/jose/mecagoenlafruta/forocoches-app/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="Aceptar">Aceptar</string>
     <string name="Cancelar">Cancelar</string>
@@ -65,7 +65,7 @@
     <string name="acerca_text">\tAplicación, no oficial, para android del foro ForoCoches.\n\tEsta aplicación utiliza el navegador del teléfono, carga la dirección "m.forocoches.com".\n  Las contraseñas no son guardadas por la aplicación si no por el navegador proporcionado por el sistema. Por esta razón en "Menciones" has de introducir tu usuario\n  Esta aplicación implementa Accesos Directos que pueden realizarse en el navegador, simplemente ayuda a que sea más sencilla la navegación.\n\tLa aplicación no tiene acceso a tus datos personales. Si no te fías de la aplicación y quieres el código fuente de la aplicación para echarle un ojo ponte en contacto conmigo y te indicaré como acceder a él.</string>
     <string name="acerca_text2">\tPara participar en el foro debes ser usuario registrado y debes aceptar las condiciones de uso y normas de comportamiento:</string>
     <string name="app_name">ForoCoches App</string>
-    <string name="app_version">1.288</string>
+    <string name="app_version">1.288b</string>
     <string name="ayuda_activity">Ayuda</string>
     <string name="ayuda_img">Guardar Imagen</string>
     <string name="ayuda_img_text">Manten el dedo sobre la imagen que quieres guardar y aparecerá una ventana de diálogo con las opciones disponibles. Esta funcionalidad está disponible para versiones de android 2.3.x (Gingerbread) o superiores.</string>
@@ -109,7 +109,7 @@
     <string name="pref_user_text">Introduce tu nombre para no introducirlo cada vez que quieras ver las menciones.</string>
     <string name="pref_usuario">Introduce tu usuario.</string>
     <string name="pref_usuario_text">Si lo dejas en blanco podrás elegir un usuario en la aplicación.</string>
-    <!-- From: file:/home/jose/Android/forocoches-app/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/home/jose/mecagoenlafruta/forocoches-app/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="texto_h1">
         <item name="android:layout_width">fill_parent</item>

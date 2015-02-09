@@ -13,4 +13,4 @@ android:orientation="vertical">
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:scrollbarStyle="insideOverlay" />
-</LinearLayout><!-- From: file:/home/jose/Android/forocoches-app/app/src/main/res/layout/main.xml -->
+</LinearLayout><!-- From: file:/home/jose/mecagoenlafruta/forocoches-app/app/src/main/res/layout/main.xml -->

@@ -81,11 +81,11 @@ public class ForoCochesActivity extends Activity {
 			@Override
 			public void onReceivedError(WebView view, int errorCode, String description, String failingUrl) {
 				super.onReceivedError(view, errorCode, description, failingUrl);
-				view.loadUrl("file:///android_asset/net/net-error.html");
+				view.loadUrl("file:///android_asset/net/forocoches.com.net-error.html");
 			}
 
             public void onPageStarted(WebView view, String url, Bitmap favicon) {
-                if (!url.contains(miURLHandler.DOMAIN)) {
+                if (!url.contains("forocoches.com")) {
                     Intent i = new Intent(Intent.ACTION_VIEW);
                     i.setData(Uri.parse(url));
                     view.stopLoading();
@@ -231,8 +231,8 @@ public class ForoCochesActivity extends Activity {
 
 	@Override
 	public void onResume() {
-        if (!webView.getUrl().contains(miURLHandler.DOMAIN))
-            webView.goBack();
+//        if (!webView.getUrl().contains("forocoches.com"))
+//            webView.goBack();
 		super.onResume();
         cargarPreferencias();
 	}

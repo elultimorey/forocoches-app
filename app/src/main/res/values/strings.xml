@@ -2,7 +2,7 @@
 <resources>
 	<!-- General -->
     <string name="app_name">ForoCoches App</string>
-    <string name="app_version">1.288</string>
+    <string name="app_version">1.288b</string>
     <string name="Aceptar">Aceptar</string>
     <string name="Cancelar">Cancelar</string>
     <string name="dialog_user_title">Panel de Control de Usuario</string>

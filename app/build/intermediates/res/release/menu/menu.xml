@@ -7,4 +7,4 @@
   <item android:icon="@drawable/ic_menu_preferences" android:id="@+id/ajustes" android:title="@string/menu_ajustes"></item>
   <item android:id="@+id/salir" android:icon="@drawable/ic_menu_exit" android:title="@string/menu_salir"></item>
 </menu>
-<!-- From: file:/home/jose/Android/forocoches-app/app/src/main/res/menu/menu.xml -->
+<!-- From: file:/home/jose/mecagoenlafruta/forocoches-app/app/src/main/res/menu/menu.xml -->
