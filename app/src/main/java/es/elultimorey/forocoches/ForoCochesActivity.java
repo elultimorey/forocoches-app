@@ -16,6 +16,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.util.Log;
 import android.view.ContextMenu;
 import android.view.ContextMenu.ContextMenuInfo;
 import android.view.KeyEvent;
@@ -85,14 +86,18 @@ public class ForoCochesActivity extends Activity {
 			}
 
             public void onPageStarted(WebView view, String url, Bitmap favicon) {
-                if (!url.contains("forocoches.com")) {
-                    Intent i = new Intent(Intent.ACTION_VIEW);
-                    i.setData(Uri.parse(url));
-                    view.stopLoading();
-                    startActivity(i);
+
+                if (url.contains("about:blank")) {
                 }
                 else {
-                    super.onPageStarted(view, url, favicon);
+                    if (!url.contains("forocoches.com")) {
+                        Intent i = new Intent(Intent.ACTION_VIEW);
+                        i.setData(Uri.parse(url));
+                        view.stopLoading();
+                        startActivity(i);
+                    } else {
+                        super.onPageStarted(view, url, favicon);
+                    }
                 }
             }
 
@@ -157,7 +162,7 @@ public class ForoCochesActivity extends Activity {
 			}
 		});
 
-        webView.loadUrl(miURLHandler.getURL());
+        webView.loadUrl("http://m.forocoches.com");
 
 		lexus.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
