@@ -116,7 +116,7 @@ public class ForoCochesActivity extends Activity {
                                 "var videosYoutube = document.getElementsByClassName('video-youtube'); " +
                                 "var post = videosYoutube["+i+"].innerHTML.split('directYoutube/8982/'); " +
                                 "var codigo = post[1].split('/'); " +
-                                " videosYoutube["+i+"].innerHTML = '<a href=\"https://www.youtube.com/watch?v='+codigo[0]+'\"><img height=\"200px\" width=\"300px\" src=\"http://img.youtube.com/vi/'+codigo[0]+'/sddefault.jpg\"/></br><img height=\"25px\" width=\"25px\" src=\"http://3.bp.blogspot.com/-EldOzOuBVio/VNdKbGFS1ZI/AAAAAAAACaE/RzGeIu8etnY/s1600/makefg.png\"/></br>(Ver en YouTube)</a>';" +
+                                " videosYoutube["+i+"].innerHTML = '<a href=\"https://www.youtube.com/watch?v='+codigo[0]+'\"><img height=\"200px\" width=\"300px\" src=\"http://img.youtube.com/vi/'+codigo[0]+'/sddefault.jpg\"/></br><img height=\"25px\" width=\"25px\" src=\"http://i.imgur.com/ABBdxJt.png\"/></br>(Ver en YouTube)</a>';" +
                                 "})()");
                     }
                 } catch (Exception e) {
@@ -135,7 +135,7 @@ public class ForoCochesActivity extends Activity {
                                 "var videosYoutube = document.getElementsByClassName('video-youtube'); " +
                                 "var post = videosYoutube["+i+"].innerHTML.split('www.youtube.com/embed/'); " +
                                 "var codigo = post[1].split('\"'); " +
-                                " videosYoutube["+i+"].innerHTML = '<a href=\"https://www.youtube.com/watch?v='+codigo[0]+'\"><img height=\"200px\" width=\"300px\" src=\"http://img.youtube.com/vi/'+codigo[0]+'/sddefault.jpg\"/></br><img height=\"25px\" width=\"25px\" src=\"http://3.bp.blogspot.com/-EldOzOuBVio/VNdKbGFS1ZI/AAAAAAAACaE/RzGeIu8etnY/s1600/makefg.png\"/></br>(Ver en YouTube)</a>';" +
+                                " videosYoutube["+i+"].innerHTML = '<a href=\"https://www.youtube.com/watch?v='+codigo[0]+'\"><img height=\"200px\" width=\"300px\" src=\"http://img.youtube.com/vi/'+codigo[0]+'/sddefault.jpg\"/></br><img height=\"25px\" width=\"25px\" src=\"http://i.imgur.com/ABBdxJt.png\"/></br>(Ver en YouTube)</a>';" +
                                 "})()");
                     }
                 } catch (Exception e) {
@@ -737,10 +737,14 @@ public class ForoCochesActivity extends Activity {
 			firstEnum = EnumShortcut.MENCIONES;
 			firstShorcurt.setImageResource(R.drawable.ic_bar_menciones);			
 		}
-		else if (fs.equals("privados")) {
-			firstEnum = EnumShortcut.PRIVADOS;
-			firstShorcurt.setImageResource(R.drawable.ic_bar_privados);
+		else if (fs.equals("privados_e")) {
+			firstEnum = EnumShortcut.PRIVADOS_E;
+			firstShorcurt.setImageResource(R.drawable.ic_bar_privados_enviados);
 		}
+        else if (fs.equals("privados_r")) {
+            firstEnum = EnumShortcut.PRIVADOS_R;
+            firstShorcurt.setImageResource(R.drawable.ic_bar_privados_recibidos);
+        }
 		else if (fs.equals("temas_suscritos")) {
 			firstEnum = EnumShortcut.TEMAS_S;
 			firstShorcurt.setImageResource(R.drawable.ic_bar_temas);
@@ -796,10 +800,14 @@ public class ForoCochesActivity extends Activity {
 			secondEnum = EnumShortcut.MENCIONES;
 			secondShorcurt.setImageResource(R.drawable.ic_bar_menciones);			
 		}
-		else if (ss.equals("privados")) {
-			secondEnum = EnumShortcut.PRIVADOS;
-			secondShorcurt.setImageResource(R.drawable.ic_bar_privados);
+		else if (ss.equals("privados_e")) {
+			secondEnum = EnumShortcut.PRIVADOS_E;
+			secondShorcurt.setImageResource(R.drawable.ic_bar_privados_enviados);
 		}
+        else if (ss.equals("privados_r")) {
+            secondEnum = EnumShortcut.PRIVADOS_R;
+            secondShorcurt.setImageResource(R.drawable.ic_bar_privados_recibidos);
+        }
 		else if (ss.equals("temas_suscritos")) {
 			secondEnum = EnumShortcut.TEMAS_S;
 			secondShorcurt.setImageResource(R.drawable.ic_bar_temas);
@@ -874,7 +882,10 @@ public class ForoCochesActivity extends Activity {
 		case MENCIONES:
 			openMenciones();
 			break;
-		case PRIVADOS:
+        case PRIVADOS_E:
+            webView.loadUrl(miURLHandler.privadosEnviados());
+            break;
+		case PRIVADOS_R:
 			webView.loadUrl(miURLHandler.privadosRecibidos());
 			break;
 		case TEMAS_S:

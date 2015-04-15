@@ -34,20 +34,20 @@ public final class R {
         public static final int bar_background=0x7f020000;
         public static final int bar_button_normal=0x7f020001;
         public static final int bar_button_touch=0x7f020002;
-        public static final int gmail=0x7f020003;
-        public static final int ic_ad_herramientas=0x7f020004;
-        public static final int ic_ad_usuario=0x7f020005;
-        public static final int ic_bar_actualizar=0x7f020006;
-        public static final int ic_bar_adelante=0x7f020007;
-        public static final int ic_bar_atras=0x7f020008;
-        public static final int ic_bar_buscar=0x7f020009;
-        public static final int ic_bar_compartir=0x7f02000a;
-        public static final int ic_bar_herramientas=0x7f02000b;
-        public static final int ic_bar_hoy=0x7f02000c;
-        public static final int ic_bar_ira=0x7f02000d;
-        public static final int ic_bar_menciones=0x7f02000e;
-        public static final int ic_bar_nuevo=0x7f02000f;
-        public static final int ic_bar_privados=0x7f020010;
+        public static final int ic_ad_herramientas=0x7f020003;
+        public static final int ic_ad_usuario=0x7f020004;
+        public static final int ic_bar_actualizar=0x7f020005;
+        public static final int ic_bar_adelante=0x7f020006;
+        public static final int ic_bar_atras=0x7f020007;
+        public static final int ic_bar_buscar=0x7f020008;
+        public static final int ic_bar_compartir=0x7f020009;
+        public static final int ic_bar_herramientas=0x7f02000a;
+        public static final int ic_bar_hoy=0x7f02000b;
+        public static final int ic_bar_menciones=0x7f02000c;
+        public static final int ic_bar_nuevo=0x7f02000d;
+        public static final int ic_bar_privados=0x7f02000e;
+        public static final int ic_bar_privados_enviados=0x7f02000f;
+        public static final int ic_bar_privados_recibidos=0x7f020010;
         public static final int ic_bar_responder=0x7f020011;
         public static final int ic_bar_temas=0x7f020012;
         public static final int ic_bar_usuario=0x7f020013;
@@ -60,7 +60,6 @@ public final class R {
         public static final int lexus=0x7f02001a;
         public static final int lexus_touch=0x7f02001b;
         public static final int progress_bar=0x7f02001c;
-        public static final int twitter=0x7f02001d;
     }
     public static final class id {
         public static final int LinearLayout01=0x7f0a000c;
