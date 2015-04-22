@@ -7,7 +7,7 @@ android {
     defaultConfig {
         applicationId "es.elultimorey.forocoches"
         minSdkVersion 4
-        targetSdkVersion 4
+        targetSdkVersion 9
     }
 
     buildTypes {
@@ -16,4 +16,13 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
     }
+}
+dependencies {
+    compile 'com.android.support:support-v4:22.0.+'
+    // Imgur
+    compile 'com.squareup.retrofit:retrofit:1.7.0'
+    compile 'com.squareup.okhttp:okhttp:2.0.0'
+    compile 'com.squareup.okhttp:okhttp-urlconnection:2.0.0'
+    compile 'com.jakewharton:butterknife:6.0.0'
+    compile 'com.squareup.picasso:picasso:2.4.0'
 }

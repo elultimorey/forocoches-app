@@ -15,6 +15,14 @@ public final class R {
         public static final int shorcurt_values=0x7f050003;
     }
     public static final class attr {
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int metaButtonBarButtonStyle=0x7f010001;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int metaButtonBarStyle=0x7f010000;
     }
     public static final class color {
         public static final int azul_link=0x7f060000;
@@ -22,13 +30,19 @@ public final class R {
         public static final int bar_end=0x7f060002;
         public static final int bar_start=0x7f060003;
         public static final int black=0x7f060004;
-        public static final int button_normal_end=0x7f060005;
-        public static final int button_normal_start=0x7f060006;
-        public static final int button_touch_center=0x7f060007;
-        public static final int button_touch_end=0x7f060008;
-        public static final int button_touch_start=0x7f060009;
-        public static final int rojo_gmail=0x7f06000a;
-        public static final int white=0x7f06000b;
+        public static final int black_overlay=0x7f060005;
+        public static final int button_normal_end=0x7f060006;
+        public static final int button_normal_start=0x7f060007;
+        public static final int button_touch_center=0x7f060008;
+        public static final int button_touch_end=0x7f060009;
+        public static final int button_touch_start=0x7f06000a;
+        public static final int rojo_gmail=0x7f06000b;
+        public static final int white=0x7f06000c;
+    }
+    public static final class dimen {
+        public static final int activity_horizontal_margin=0x7f070000;
+        public static final int activity_vertical_margin=0x7f070001;
+        public static final int padding=0x7f070002;
     }
     public static final class drawable {
         public static final int bar_background=0x7f020000;
@@ -62,96 +76,153 @@ public final class R {
         public static final int progress_bar=0x7f02001c;
     }
     public static final class id {
-        public static final int LinearLayout01=0x7f0a000c;
-        public static final int ProgressBar=0x7f0a000b;
-        public static final int TR02=0x7f0a0002;
-        public static final int action_bar=0x7f0a0001;
-        public static final int actualizar=0x7f0a000a;
-        public static final int adelante=0x7f0a0010;
-        public static final int aire1=0x7f0a0003;
-        public static final int aire2=0x7f0a0005;
-        public static final int ajustes=0x7f0a0011;
-        public static final int first=0x7f0a0008;
-        public static final int lexus_home=0x7f0a0004;
-        public static final int panel_foro=0x7f0a000f;
-        public static final int panel_usuario=0x7f0a000e;
-        public static final int progress_bar_circle=0x7f0a0006;
-        public static final int relativeLayout1=0x7f0a0007;
-        public static final int salir=0x7f0a0012;
-        public static final int second=0x7f0a0009;
-        public static final int textview_normas=0x7f0a0000;
-        public static final int webview=0x7f0a000d;
+        public static final int LinearLayout01=0x7f0b0010;
+        public static final int ProgressBar=0x7f0b000b;
+        public static final int TR02=0x7f0b0002;
+        public static final int action_bar=0x7f0b0001;
+        public static final int action_settings=0x7f0b0017;
+        public static final int actualizar=0x7f0b000a;
+        public static final int adelante=0x7f0b0014;
+        public static final int aire1=0x7f0b0003;
+        public static final int aire2=0x7f0b0005;
+        public static final int ajustes=0x7f0b0015;
+        public static final int back_btn=0x7f0b000f;
+        public static final int choose_btn=0x7f0b000d;
+        public static final int first=0x7f0b0008;
+        public static final int lexus_home=0x7f0b0004;
+        public static final int panel_foro=0x7f0b0013;
+        public static final int panel_usuario=0x7f0b0012;
+        public static final int progress_bar_circle=0x7f0b0006;
+        public static final int relativeLayout1=0x7f0b0007;
+        public static final int salir=0x7f0b0016;
+        public static final int second=0x7f0b0009;
+        public static final int textview_normas=0x7f0b0000;
+        public static final int upload_btn=0x7f0b000e;
+        public static final int upload_image=0x7f0b000c;
+        public static final int webview=0x7f0b0011;
     }
     public static final class layout {
         public static final int acerca=0x7f030000;
         public static final int action_bar=0x7f030001;
-        public static final int ayuda=0x7f030002;
-        public static final int main=0x7f030003;
+        public static final int activity_editor=0x7f030002;
+        public static final int activity_image_upload=0x7f030003;
+        public static final int ayuda=0x7f030004;
+        public static final int main=0x7f030005;
     }
     public static final class menu {
-        public static final int menu=0x7f090000;
+        public static final int menu=0x7f0a0000;
+        public static final int menu_editor=0x7f0a0001;
     }
     public static final class string {
-        public static final int Aceptar=0x7f070000;
-        public static final int Cancelar=0x7f070001;
-        public static final int acerca_activity=0x7f070002;
-        public static final int acerca_disclaimer=0x7f070003;
-        public static final int acerca_disclaimer_text=0x7f070004;
-        public static final int acerca_normas=0x7f070005;
-        public static final int acerca_text=0x7f070006;
-        public static final int acerca_text2=0x7f070007;
-        public static final int app_name=0x7f070008;
-        public static final int app_version=0x7f070009;
-        public static final int ayuda_activity=0x7f07000a;
-        public static final int ayuda_img=0x7f07000b;
-        public static final int ayuda_img_text=0x7f07000c;
-        public static final int ayuda_menciones=0x7f07000d;
-        public static final int ayuda_menciones_text=0x7f07000e;
-        public static final int ayuda_text_buttons=0x7f07000f;
-        public static final int ayuda_text_comments=0x7f070010;
-        public static final int ayuda_text_shortcurts=0x7f070011;
-        public static final int ayuda_title_buttons=0x7f070012;
-        public static final int ayuda_title_comments=0x7f070013;
-        public static final int ayuda_title_shortcurts=0x7f070014;
-        public static final int contacto_comentarios=0x7f070015;
-        public static final int dialog_herramientas_title=0x7f070016;
-        public static final int dialog_user_title=0x7f070017;
-        public static final int menu_adelante=0x7f070018;
-        public static final int menu_ajustes=0x7f070019;
-        public static final int menu_herramientas=0x7f07001a;
-        public static final int menu_panel_usuario=0x7f07001b;
-        public static final int menu_salir=0x7f07001c;
-        public static final int pref_about=0x7f07001d;
-        public static final int pref_about_acerca=0x7f07001e;
-        public static final int pref_about_acerca_text=0x7f07001f;
-        public static final int pref_about_ayuda=0x7f070020;
-        public static final int pref_about_ayuda_text=0x7f070021;
-        public static final int pref_about_version=0x7f070022;
-        public static final int pref_generales=0x7f070023;
-        public static final int pref_menciones=0x7f070024;
-        public static final int pref_navegacion=0x7f070025;
-        public static final int pref_navegacion_completa=0x7f070026;
-        public static final int pref_navegacion_completa_text=0x7f070027;
-        public static final int pref_navegacion_javascript=0x7f070028;
-        public static final int pref_shortcurt=0x7f070029;
-        public static final int pref_shortcurt_first=0x7f07002a;
-        public static final int pref_shortcurt_first_text=0x7f07002b;
-        public static final int pref_shortcurt_second=0x7f07002c;
-        public static final int pref_shortcurt_second_text=0x7f07002d;
-        public static final int pref_user=0x7f07002e;
-        public static final int pref_user_menciones=0x7f07002f;
-        public static final int pref_user_menciones_text=0x7f070030;
-        public static final int pref_user_name=0x7f070031;
-        public static final int pref_user_text=0x7f070032;
-        public static final int pref_usuario=0x7f070033;
-        public static final int pref_usuario_text=0x7f070034;
+        public static final int Aceptar=0x7f080000;
+        public static final int Cancelar=0x7f080001;
+        public static final int acerca_activity=0x7f080002;
+        public static final int acerca_disclaimer=0x7f080003;
+        public static final int acerca_disclaimer_text=0x7f080004;
+        public static final int acerca_normas=0x7f080005;
+        public static final int acerca_text=0x7f080006;
+        public static final int acerca_text2=0x7f080007;
+        public static final int action_settings=0x7f080008;
+        public static final int app_name=0x7f080009;
+        public static final int app_version=0x7f08000a;
+        public static final int ayuda_activity=0x7f08000b;
+        public static final int ayuda_img=0x7f08000c;
+        public static final int ayuda_img_text=0x7f08000d;
+        public static final int ayuda_menciones=0x7f08000e;
+        public static final int ayuda_menciones_text=0x7f08000f;
+        public static final int ayuda_text_buttons=0x7f080010;
+        public static final int ayuda_text_comments=0x7f080011;
+        public static final int ayuda_text_shortcurts=0x7f080012;
+        public static final int ayuda_title_buttons=0x7f080013;
+        public static final int ayuda_title_comments=0x7f080014;
+        public static final int ayuda_title_shortcurts=0x7f080015;
+        public static final int contacto_comentarios=0x7f080016;
+        public static final int dialog_herramientas_title=0x7f080017;
+        public static final int dialog_user_title=0x7f080018;
+        public static final int dummy_button=0x7f080019;
+        public static final int dummy_content=0x7f08001a;
+        public static final int hello_world=0x7f08001b;
+        public static final int menu_adelante=0x7f08001c;
+        public static final int menu_ajustes=0x7f08001d;
+        public static final int menu_herramientas=0x7f08001e;
+        public static final int menu_panel_usuario=0x7f08001f;
+        public static final int menu_salir=0x7f080020;
+        public static final int pref_about=0x7f080021;
+        public static final int pref_about_acerca=0x7f080022;
+        public static final int pref_about_acerca_text=0x7f080023;
+        public static final int pref_about_ayuda=0x7f080024;
+        public static final int pref_about_ayuda_text=0x7f080025;
+        public static final int pref_about_version=0x7f080026;
+        public static final int pref_generales=0x7f080027;
+        public static final int pref_menciones=0x7f080028;
+        public static final int pref_navegacion=0x7f080029;
+        public static final int pref_navegacion_completa=0x7f08002a;
+        public static final int pref_navegacion_completa_text=0x7f08002b;
+        public static final int pref_navegacion_javascript=0x7f08002c;
+        public static final int pref_shortcurt=0x7f08002d;
+        public static final int pref_shortcurt_first=0x7f08002e;
+        public static final int pref_shortcurt_first_text=0x7f08002f;
+        public static final int pref_shortcurt_second=0x7f080030;
+        public static final int pref_shortcurt_second_text=0x7f080031;
+        public static final int pref_user=0x7f080032;
+        public static final int pref_user_menciones=0x7f080033;
+        public static final int pref_user_menciones_text=0x7f080034;
+        public static final int pref_user_name=0x7f080035;
+        public static final int pref_user_text=0x7f080036;
+        public static final int pref_usuario=0x7f080037;
+        public static final int pref_usuario_text=0x7f080038;
+        public static final int title_activity_editor=0x7f080039;
+        public static final int title_activity_image_upload=0x7f08003a;
+        public static final int up_selec=0x7f08003b;
+        public static final int up_subir=0x7f08003c;
     }
     public static final class style {
-        public static final int texto_h1=0x7f080000;
-        public static final int texto_link=0x7f080001;
-        public static final int texto_normal=0x7f080002;
+        public static final int ButtonBar=0x7f090000;
+        public static final int ButtonBarButton=0x7f090001;
+        public static final int FullscreenActionBarStyle=0x7f090006;
+        public static final int FullscreenTheme=0x7f090002;
+        public static final int texto_h1=0x7f090003;
+        public static final int texto_link=0x7f090004;
+        public static final int texto_normal=0x7f090005;
     }
     public static final class xml {
         public static final int preferences=0x7f040000;
     }
+    public static final class styleable {
+        /** Attributes that can be used with a ButtonBarContainerTheme.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #ButtonBarContainerTheme_metaButtonBarButtonStyle es.elultimorey.forocoches:metaButtonBarButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ButtonBarContainerTheme_metaButtonBarStyle es.elultimorey.forocoches:metaButtonBarStyle}</code></td><td></td></tr>
+           </table>
+           @see #ButtonBarContainerTheme_metaButtonBarButtonStyle
+           @see #ButtonBarContainerTheme_metaButtonBarStyle
+         */
+        public static final int[] ButtonBarContainerTheme = {
+            0x7f010000, 0x7f010001
+        };
+        /**
+          <p>This symbol is the offset where the {@link es.elultimorey.forocoches.R.attr#metaButtonBarButtonStyle}
+          attribute's value can be found in the {@link #ButtonBarContainerTheme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name es.elultimorey.forocoches:metaButtonBarButtonStyle
+        */
+        public static final int ButtonBarContainerTheme_metaButtonBarButtonStyle = 1;
+        /**
+          <p>This symbol is the offset where the {@link es.elultimorey.forocoches.R.attr#metaButtonBarStyle}
+          attribute's value can be found in the {@link #ButtonBarContainerTheme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name es.elultimorey.forocoches:metaButtonBarStyle
+        */
+        public static final int ButtonBarContainerTheme_metaButtonBarStyle = 0;
+    };
 }

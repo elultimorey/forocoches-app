@@ -2,7 +2,7 @@
 <resources>
 	<!-- General -->
     <string name="app_name">ForoCoches App</string>
-    <string name="app_version">1.5</string>
+    <string name="app_version">1.882</string>
     <string name="Aceptar">Aceptar</string>
     <string name="Cancelar">Cancelar</string>
     <string name="dialog_user_title">Panel de Control de Usuario</string>
@@ -69,4 +69,16 @@
     <string name="ayuda_menciones">Menciones</string>
     <string name="ayuda_menciones_text">Introduce tu nombre de usuario en ajustes o cuando quieras ver las menciones que tienes se te pedirá el mismo.\nSe puede escoger entre ver el hilo en el que te han mencionado y el post en el que te han mencionado seleccionando la opción que prefieras en los ajustes.</string>    
     <string name="ayuda_text_comments">\tCualquier sugerencia para mejorar la aplicación será bienvenida. Puedes contactarme con un email a: elultimorey.dev@gmail.com.</string>
+    <string name="title_activity_editor">Editor</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_image_upload">ImageUploadActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <!-- Editor & Upload -->
+    <string name="up_selec">Seleccionar Imagen</string>
+    <string name="up_subir">Subir</string>
 </resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/jose/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp/okhttp-urlconnection/2.0.0/afe8399d352713b66e597e9670c741d1e60ae923/okhttp-urlconnection-2.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="afe8399d352713b66e597e9670c741d1e60ae923">
+        <dex dex="/home/jose/mecagoenlafruta/forocoches-app/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-2.0.0-a6162c2346cdac4d2f92baf452244e63d2a5d192.jar" />
+    </item>
+    <item
+        jar="/home/jose/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife/6.0.0/3a10b25b6820e19102e118711afe6a66c0bae123/butterknife-6.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="3a10b25b6820e19102e118711afe6a66c0bae123">
+        <dex dex="/home/jose/mecagoenlafruta/forocoches-app/app/build/intermediates/pre-dexed/debug/butterknife-6.0.0-0a63a1ab68cbc7c633f15f8e4f1fa1639dfd2457.jar" />
+    </item>
+    <item
+        jar="/home/jose/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.4.0/f36d2d4e3a36b3259aaf9d004d29b4cdc6c1bfb2/picasso-2.4.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="f36d2d4e3a36b3259aaf9d004d29b4cdc6c1bfb2">
+        <dex dex="/home/jose/mecagoenlafruta/forocoches-app/app/build/intermediates/pre-dexed/debug/picasso-2.4.0-beef6cc579a5dd80bdd5854570e7cd5ccf70a9ae.jar" />
+    </item>
+    <item
+        jar="/home/jose/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit/retrofit/1.7.0/cc6807da6fdf91bea1b6a4a90c3818dac27d335f/retrofit-1.7.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="cc6807da6fdf91bea1b6a4a90c3818dac27d335f">
+        <dex dex="/home/jose/mecagoenlafruta/forocoches-app/app/build/intermediates/pre-dexed/debug/retrofit-1.7.0-bd4c79c23bb6024cee364f6a1c1a312eabd34c72.jar" />
+    </item>
+    <item
+        jar="/home/jose/mecagoenlafruta/forocoches-app/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="/home/jose/mecagoenlafruta/forocoches-app/app/build/intermediates/pre-dexed/debug/classes-5ec6aee5cc955e5bfcdff3f8cb1bdd706dd1ff72.jar" />
+    </item>
+    <item
+        jar="/home/jose/mecagoenlafruta/forocoches-app/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/libs/internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="/home/jose/mecagoenlafruta/forocoches-app/app/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-1f0c9cfd2ec562a5caaf2b399a83680da0ca52a2.jar" />
+    </item>
+    <item
+        jar="/home/jose/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/22.0.0/support-annotations-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="/home/jose/mecagoenlafruta/forocoches-app/app/build/intermediates/pre-dexed/debug/support-annotations-22.0.0-a2ef9adb256beae87e2029a608ad41458312dde8.jar" />
+    </item>
+    <item
+        jar="/home/jose/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3/5fc52c41ef0239d1093a1eb7c3697036183677ce/gson-2.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="5fc52c41ef0239d1093a1eb7c3697036183677ce">
+        <dex dex="/home/jose/mecagoenlafruta/forocoches-app/app/build/intermediates/pre-dexed/debug/gson-2.3-cd40ecff10e3b47c7fef9c75a7d254255991c7a8.jar" />
+    </item>
+    <item
+        jar="/home/jose/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp/okhttp/2.0.0/4c8d1536dba3812cc1592090dc20c47a4ed3c35e/okhttp-2.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4c8d1536dba3812cc1592090dc20c47a4ed3c35e">
+        <dex dex="/home/jose/mecagoenlafruta/forocoches-app/app/build/intermediates/pre-dexed/debug/okhttp-2.0.0-feaf5e81a1f25466da009dd485188ee96fc96475.jar" />
+    </item>
+    <item
+        jar="/home/jose/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.0.0/2534c458682c73f5b9871131ab3098d3f987ca3/okio-1.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="02534c458682c73f5b9871131ab3098d3f987ca3">
+        <dex dex="/home/jose/mecagoenlafruta/forocoches-app/app/build/intermediates/pre-dexed/debug/okio-1.0.0-ad2b443ec450f790a9abfc833c2f50889717e69a.jar" />
+    </item>
+
+</items>

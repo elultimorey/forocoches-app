@@ -1,1 +1,11 @@
 /home/jose/mecagoenlafruta/forocoches-app/app/build/intermediates/classes/debug
+/home/jose/mecagoenlafruta/forocoches-app/app/build/intermediates/pre-dexed/debug/support-annotations-22.0.0-a2ef9adb256beae87e2029a608ad41458312dde8.jar
+/home/jose/mecagoenlafruta/forocoches-app/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-2.0.0-a6162c2346cdac4d2f92baf452244e63d2a5d192.jar
+/home/jose/mecagoenlafruta/forocoches-app/app/build/intermediates/pre-dexed/debug/butterknife-6.0.0-0a63a1ab68cbc7c633f15f8e4f1fa1639dfd2457.jar
+/home/jose/mecagoenlafruta/forocoches-app/app/build/intermediates/pre-dexed/debug/okio-1.0.0-ad2b443ec450f790a9abfc833c2f50889717e69a.jar
+/home/jose/mecagoenlafruta/forocoches-app/app/build/intermediates/pre-dexed/debug/retrofit-1.7.0-bd4c79c23bb6024cee364f6a1c1a312eabd34c72.jar
+/home/jose/mecagoenlafruta/forocoches-app/app/build/intermediates/pre-dexed/debug/picasso-2.4.0-beef6cc579a5dd80bdd5854570e7cd5ccf70a9ae.jar
+/home/jose/mecagoenlafruta/forocoches-app/app/build/intermediates/pre-dexed/debug/gson-2.3-cd40ecff10e3b47c7fef9c75a7d254255991c7a8.jar
+/home/jose/mecagoenlafruta/forocoches-app/app/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-1f0c9cfd2ec562a5caaf2b399a83680da0ca52a2.jar
+/home/jose/mecagoenlafruta/forocoches-app/app/build/intermediates/pre-dexed/debug/okhttp-2.0.0-feaf5e81a1f25466da009dd485188ee96fc96475.jar
+/home/jose/mecagoenlafruta/forocoches-app/app/build/intermediates/pre-dexed/debug/classes-5ec6aee5cc955e5bfcdff3f8cb1bdd706dd1ff72.jar
