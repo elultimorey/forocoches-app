@@ -2,7 +2,7 @@
 <resources>
 	<!-- General -->
     <string name="app_name">ForoCoches App</string>
-    <string name="app_version">1.888a</string>
+    <string name="app_version">1.9</string>
     <string name="Aceptar">Aceptar</string>
     <string name="Cancelar">Cancelar</string>
     <string name="dialog_user_title">Panel de Control de Usuario</string>
@@ -34,6 +34,7 @@
 	    <string name="pref_user_name">Nombre de Usuario</string>
 	    <string name="pref_user_menciones">Menciones</string>
 	    <string name="pref_navegacion_javascript">Activar JavaScript</string>
+        <string name="pref_navegacion_imagenes">Cargar imágenes</string>
 	    <string name="pref_navegacion_completa">Ver Versión Completa</string>
 	    <string name="pref_about_ayuda">Ayuda</string>
 	    <string name="pref_about_acerca">Acerca de</string>

@@ -20,6 +20,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.util.Log;
 import android.view.ContextMenu;
 import android.view.ContextMenu.ContextMenuInfo;
 import android.view.KeyEvent;
@@ -98,6 +99,9 @@ public class ForoCochesActivity extends Activity implements OnImageUploadedListe
         final ImageButton reload = (ImageButton) findViewById(R.id.actualizar);
 
         webView.getSettings().setSavePassword(true);
+        webView.getSettings().setSupportZoom(true);
+
+        webView.getSettings().setDisplayZoomControls(true);
 
         cargarPreferencias();
 
@@ -168,7 +172,12 @@ public class ForoCochesActivity extends Activity implements OnImageUploadedListe
                     //
                 }
 
-                super.onLoadResource(view, url);
+                if ((!url.contains("forocoches.com")) && (url.contains("jpg") || url.contains("jpeg") || url.contains("gif") || url.contains("png"))) {
+                    Log.d("###", "IMG: "+url);
+                }
+                else {
+                    super.onLoadResource(view, url);
+                }
 
             }
 
@@ -983,6 +992,7 @@ public class ForoCochesActivity extends Activity implements OnImageUploadedListe
         }
 
         webView.getSettings().setJavaScriptEnabled(mPrefs.getBoolean("pref_navegacion_javascript", true));
+        webView.getSettings().setLoadsImagesAutomatically(mPrefs.getBoolean("pref_cargar_imagenes", true));
 
         if (miURLHandler.verVersionCompleta(mPrefs.getBoolean("pref_navegacion_completa", false)))
             webView.loadUrl(miURLHandler.renovarURL(webView.getUrl()));

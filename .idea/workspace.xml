@@ -42,136 +42,62 @@
       <file leaf-file-name="ForoCochesActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/es/elultimorey/forocoches/ForoCochesActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="7620" max-vertical-offset="15390">
-              <caret line="556" column="39" selection-start-line="556" selection-start-column="39" selection-end-line="556" selection-end-column="39" />
+            <state vertical-scroll-proportion="-5.7777777" vertical-offset="1374" max-vertical-offset="15720">
+              <caret line="102" column="0" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#20000#21589#0" expanded="true" />
-                <element signature="e#21570#21571#0" expanded="true" />
-                <element signature="e#22830#23007#0" expanded="true" />
-                <element signature="e#22996#22997#0" expanded="true" />
-                <element signature="e#23114#23541#0" expanded="true" />
-                <element signature="e#23530#23531#0" expanded="true" />
-                <element signature="e#23656#23809#0" expanded="true" />
-                <element signature="e#23798#23799#0" expanded="true" />
+                <element signature="e#7936#7937#0" expanded="true" />
+                <element signature="e#7998#7999#0" expanded="true" />
+                <element signature="e#8048#8507#0" expanded="true" />
+                <element signature="e#8496#8497#0" expanded="true" />
+                <element signature="e#8597#8747#0" expanded="true" />
+                <element signature="e#8736#8737#0" expanded="true" />
+                <element signature="e#8788#8981#0" expanded="true" />
+                <element signature="e#8970#8971#0" expanded="true" />
+                <element signature="e#9073#9215#0" expanded="true" />
+                <element signature="e#9204#9205#0" expanded="true" />
+                <element signature="e#9260#9777#0" expanded="true" />
+                <element signature="e#9766#9767#0" expanded="true" />
+                <element signature="e#9823#10342#0" expanded="true" />
+                <element signature="e#10331#10332#0" expanded="true" />
+                <element signature="e#10380#11061#0" expanded="true" />
+                <element signature="e#11050#11051#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <file leaf-file-name="PreferencesActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/es/elultimorey/forocoches/PreferencesActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.10344828" vertical-offset="0" max-vertical-offset="900">
-              <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
-              <folding>
-                <element signature="e#201#222#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AboutActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/es/elultimorey/forocoches/AboutActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="720">
-              <caret line="48" column="21" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="461" max-vertical-offset="750">
+              <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AyudaActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/es/elultimorey/forocoches/AyudaActivity.java">
+      <file leaf-file-name="preferences.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/xml/preferences.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="705">
-              <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+            <state vertical-scroll-proportion="0.65217394" vertical-offset="45" max-vertical-offset="480">
+              <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#1623#1659#0" expanded="true" />
+                <element signature="e#1793#1827#0" expanded="true" />
+                <element signature="e#1938#1977#0" expanded="true" />
               </folding>
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="URLHandler.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/es/elultimorey/forocoches/URLHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2625" max-vertical-offset="3060">
-              <caret line="264" column="31" selection-start-line="264" selection-start-column="31" selection-end-line="264" selection-end-column="31" />
-              <folding>
-                <element signature="e#2388#2389#0" expanded="true" />
-                <element signature="e#2437#2438#0" expanded="true" />
-                <element signature="e#2481#2482#0" expanded="true" />
-                <element signature="e#2542#2543#0" expanded="true" />
-                <element signature="e#5722#5723#0" expanded="true" />
-                <element signature="e#5777#5778#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="image_upload.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/image_upload.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.923077" vertical-offset="0" max-vertical-offset="915">
-              <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer">
-            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.4" vertical-offset="0" max-vertical-offset="1305">
-              <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+            <state vertical-scroll-proportion="-6.0" vertical-offset="390" max-vertical-offset="1320">
+              <caret line="36" column="37" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
               <folding />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ayuda.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/ayuda.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.423077" vertical-offset="1046" max-vertical-offset="1875">
-              <caret line="93" column="47" selection-start-line="93" selection-start-column="47" selection-end-line="93" selection-end-column="47" />
-              <folding>
-                <element signature="e#493#525#0" expanded="true" />
-                <element signature="e#709#740#0" expanded="true" />
-                <element signature="e#971#1000#0" expanded="true" />
-                <element signature="e#1184#1212#0" expanded="true" />
-                <element signature="e#1443#1468#0" expanded="true" />
-                <element signature="e#1652#1682#0" expanded="true" />
-                <element signature="e#1914#1933#0" expanded="true" />
-                <element signature="e#2117#2141#0" expanded="true" />
-                <element signature="e#2395#2417#0" expanded="true" />
-                <element signature="e#2644#2671#0" expanded="true" />
-                <element signature="e#2949#2971#0" expanded="true" />
-                <element signature="e#3198#3225#0" expanded="true" />
-                <element signature="e#3543#3563#0" expanded="true" />
-                <element signature="e#3878#3908#0" expanded="true" />
-                <element signature="e#4135#4164#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="acerca.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/acerca.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.461538" vertical-offset="759" max-vertical-offset="1440">
-              <caret line="67" column="43" selection-start-line="67" selection-start-column="43" selection-end-line="67" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer">
-            <state />
           </provider>
         </entry>
       </file>
@@ -1298,7 +1224,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/res/xml/preferences.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/es/elultimorey/forocoches/Webview.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/es/elultimorey/forocoches/EnumShortcut.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/arrays.xml" />
@@ -1316,13 +1241,14 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_image_upload.xml" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/es/elultimorey/forocoches/URLHandler.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/es/elultimorey/forocoches/ForoCochesActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/image_upload.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/es/elultimorey/forocoches/AyudaActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/acerca.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/ayuda.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/es/elultimorey/forocoches/ForoCochesActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/xml/preferences.xml" />
       </list>
     </option>
   </component>
@@ -1358,6 +1284,9 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -1392,6 +1321,10 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="res" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xml" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -1458,6 +1391,20 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forocoches-app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
             </PATH_ELEMENT>
@@ -1496,9 +1443,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1720,7 +1664,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1734,7 +1678,7 @@
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.58028615" sideWeight="0.50039715" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21939586" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26550078" sideWeight="0.49960285" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.49761525" sideWeight="0.49960285" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962668" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2494043" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1773,15 +1717,26 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/acerca.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="759" max-vertical-offset="1440">
+          <caret line="67" column="43" selection-start-line="67" selection-start-column="43" selection-end-line="67" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/image_upload.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="13" max-vertical-offset="900">
           <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="42" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/xml/preferences.xml">
@@ -1797,14 +1752,22 @@
           <caret line="138" column="40" selection-start-line="138" selection-start-column="40" selection-end-line="138" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#20000#21589#0" expanded="true" />
-            <element signature="e#21570#21571#0" expanded="true" />
-            <element signature="e#22830#23007#0" expanded="true" />
-            <element signature="e#22996#22997#0" expanded="true" />
-            <element signature="e#23114#23541#0" expanded="true" />
-            <element signature="e#23530#23531#0" expanded="true" />
-            <element signature="e#23656#23809#0" expanded="true" />
-            <element signature="e#23798#23799#0" expanded="true" />
+            <element signature="e#7936#7937#0" expanded="true" />
+            <element signature="e#7998#7999#0" expanded="true" />
+            <element signature="e#8048#8507#0" expanded="true" />
+            <element signature="e#8496#8497#0" expanded="true" />
+            <element signature="e#8597#8747#0" expanded="true" />
+            <element signature="e#8736#8737#0" expanded="true" />
+            <element signature="e#8788#8981#0" expanded="true" />
+            <element signature="e#8970#8971#0" expanded="true" />
+            <element signature="e#9073#9215#0" expanded="true" />
+            <element signature="e#9204#9205#0" expanded="true" />
+            <element signature="e#9260#9777#0" expanded="true" />
+            <element signature="e#9766#9767#0" expanded="true" />
+            <element signature="e#9823#10342#0" expanded="true" />
+            <element signature="e#10331#10332#0" expanded="true" />
+            <element signature="e#10380#11061#0" expanded="true" />
+            <element signature="e#11050#11051#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1830,14 +1793,22 @@
           <caret line="138" column="40" selection-start-line="138" selection-start-column="40" selection-end-line="138" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#20000#21589#0" expanded="true" />
-            <element signature="e#21570#21571#0" expanded="true" />
-            <element signature="e#22830#23007#0" expanded="true" />
-            <element signature="e#22996#22997#0" expanded="true" />
-            <element signature="e#23114#23541#0" expanded="true" />
-            <element signature="e#23530#23531#0" expanded="true" />
-            <element signature="e#23656#23809#0" expanded="true" />
-            <element signature="e#23798#23799#0" expanded="true" />
+            <element signature="e#7936#7937#0" expanded="true" />
+            <element signature="e#7998#7999#0" expanded="true" />
+            <element signature="e#8048#8507#0" expanded="true" />
+            <element signature="e#8496#8497#0" expanded="true" />
+            <element signature="e#8597#8747#0" expanded="true" />
+            <element signature="e#8736#8737#0" expanded="true" />
+            <element signature="e#8788#8981#0" expanded="true" />
+            <element signature="e#8970#8971#0" expanded="true" />
+            <element signature="e#9073#9215#0" expanded="true" />
+            <element signature="e#9204#9205#0" expanded="true" />
+            <element signature="e#9260#9777#0" expanded="true" />
+            <element signature="e#9766#9767#0" expanded="true" />
+            <element signature="e#9823#10342#0" expanded="true" />
+            <element signature="e#10331#10332#0" expanded="true" />
+            <element signature="e#10380#11061#0" expanded="true" />
+            <element signature="e#11050#11051#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1863,14 +1834,22 @@
           <caret line="109" column="81" selection-start-line="109" selection-start-column="81" selection-end-line="109" selection-end-column="81" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#20000#21589#0" expanded="true" />
-            <element signature="e#21570#21571#0" expanded="true" />
-            <element signature="e#22830#23007#0" expanded="true" />
-            <element signature="e#22996#22997#0" expanded="true" />
-            <element signature="e#23114#23541#0" expanded="true" />
-            <element signature="e#23530#23531#0" expanded="true" />
-            <element signature="e#23656#23809#0" expanded="true" />
-            <element signature="e#23798#23799#0" expanded="true" />
+            <element signature="e#7936#7937#0" expanded="true" />
+            <element signature="e#7998#7999#0" expanded="true" />
+            <element signature="e#8048#8507#0" expanded="true" />
+            <element signature="e#8496#8497#0" expanded="true" />
+            <element signature="e#8597#8747#0" expanded="true" />
+            <element signature="e#8736#8737#0" expanded="true" />
+            <element signature="e#8788#8981#0" expanded="true" />
+            <element signature="e#8970#8971#0" expanded="true" />
+            <element signature="e#9073#9215#0" expanded="true" />
+            <element signature="e#9204#9205#0" expanded="true" />
+            <element signature="e#9260#9777#0" expanded="true" />
+            <element signature="e#9766#9767#0" expanded="true" />
+            <element signature="e#9823#10342#0" expanded="true" />
+            <element signature="e#10331#10332#0" expanded="true" />
+            <element signature="e#10380#11061#0" expanded="true" />
+            <element signature="e#11050#11051#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1896,13 +1875,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/xml/preferences.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
-          <caret line="14" column="298" selection-start-line="14" selection-start-column="298" selection-end-line="14" selection-end-column="298" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_bar_atras.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1924,14 +1896,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/main.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="501">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/Android/Sdk/platforms/android-20/android.jar!/android/util/Log.class">
@@ -2068,20 +2040,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/action_bar.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.1923075" vertical-offset="675" max-vertical-offset="1275">
           <caret line="54" column="28" selection-start-line="54" selection-start-column="28" selection-end-line="55" selection-end-column="64" />
           <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/es/elultimorey/forocoches/PreferencesActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.56390977" vertical-offset="270" max-vertical-offset="750">
-          <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -2097,36 +2062,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.28639618" vertical-offset="0" max-vertical-offset="510">
           <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/image_upload.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.923077" vertical-offset="0" max-vertical-offset="915">
-          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
       <provider editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/es/elultimorey/forocoches/ForoCochesActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="7620" max-vertical-offset="15390">
-          <caret line="556" column="39" selection-start-line="556" selection-start-column="39" selection-end-line="556" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#20000#21589#0" expanded="true" />
-            <element signature="e#21570#21571#0" expanded="true" />
-            <element signature="e#22830#23007#0" expanded="true" />
-            <element signature="e#22996#22997#0" expanded="true" />
-            <element signature="e#23114#23541#0" expanded="true" />
-            <element signature="e#23530#23531#0" expanded="true" />
-            <element signature="e#23656#23809#0" expanded="true" />
-            <element signature="e#23798#23799#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="915">
+          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2142,14 +2088,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2727" max-vertical-offset="3060">
           <caret line="264" column="31" selection-start-line="264" selection-start-column="31" selection-end-line="264" selection-end-column="31" />
-          <folding>
-            <element signature="e#2388#2389#0" expanded="true" />
-            <element signature="e#2437#2438#0" expanded="true" />
-            <element signature="e#2481#2482#0" expanded="true" />
-            <element signature="e#2542#2543#0" expanded="true" />
-            <element signature="e#5722#5723#0" expanded="true" />
-            <element signature="e#5777#5778#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2157,64 +2096,92 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="705">
           <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/acerca.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.461538" vertical-offset="759" max-vertical-offset="1440">
-          <caret line="67" column="43" selection-start-line="67" selection-start-column="43" selection-end-line="67" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/ayuda.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.423077" vertical-offset="1046" max-vertical-offset="1875">
-          <caret line="93" column="47" selection-start-line="93" selection-start-column="47" selection-end-line="93" selection-end-column="47" />
-          <folding>
-            <element signature="e#493#525#0" expanded="true" />
-            <element signature="e#709#740#0" expanded="true" />
-            <element signature="e#971#1000#0" expanded="true" />
-            <element signature="e#1184#1212#0" expanded="true" />
-            <element signature="e#1443#1468#0" expanded="true" />
-            <element signature="e#1652#1682#0" expanded="true" />
-            <element signature="e#1914#1933#0" expanded="true" />
-            <element signature="e#2117#2141#0" expanded="true" />
-            <element signature="e#2395#2417#0" expanded="true" />
-            <element signature="e#2644#2671#0" expanded="true" />
-            <element signature="e#2949#2971#0" expanded="true" />
-            <element signature="e#3198#3225#0" expanded="true" />
-            <element signature="e#3543#3563#0" expanded="true" />
-            <element signature="e#3878#3908#0" expanded="true" />
-            <element signature="e#4135#4164#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.4" vertical-offset="0" max-vertical-offset="1305">
-          <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.10344828" vertical-offset="0" max-vertical-offset="900">
-          <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="900">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
           <folding>
             <element signature="e#201#222#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/ayuda.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.88131315" vertical-offset="1046" max-vertical-offset="1875">
+          <caret line="93" column="47" selection-start-line="93" selection-start-column="47" selection-end-line="93" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/acerca.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6212121" vertical-offset="759" max-vertical-offset="1440">
+          <caret line="67" column="43" selection-start-line="67" selection-start-column="43" selection-end-line="67" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/es/elultimorey/forocoches/PreferencesActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="56" max-vertical-offset="750">
+          <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.0" vertical-offset="390" max-vertical-offset="1320">
+          <caret line="36" column="37" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/es/elultimorey/forocoches/ForoCochesActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.7777777" vertical-offset="1374" max-vertical-offset="15720">
+          <caret line="102" column="0" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#7936#7937#0" expanded="true" />
+            <element signature="e#7998#7999#0" expanded="true" />
+            <element signature="e#8048#8507#0" expanded="true" />
+            <element signature="e#8496#8497#0" expanded="true" />
+            <element signature="e#8597#8747#0" expanded="true" />
+            <element signature="e#8736#8737#0" expanded="true" />
+            <element signature="e#8788#8981#0" expanded="true" />
+            <element signature="e#8970#8971#0" expanded="true" />
+            <element signature="e#9073#9215#0" expanded="true" />
+            <element signature="e#9204#9205#0" expanded="true" />
+            <element signature="e#9260#9777#0" expanded="true" />
+            <element signature="e#9766#9767#0" expanded="true" />
+            <element signature="e#9823#10342#0" expanded="true" />
+            <element signature="e#10331#10332#0" expanded="true" />
+            <element signature="e#10380#11061#0" expanded="true" />
+            <element signature="e#11050#11051#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/xml/preferences.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.65217394" vertical-offset="45" max-vertical-offset="480">
+          <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+          <folding>
+            <element signature="e#1623#1659#0" expanded="true" />
+            <element signature="e#1793#1827#0" expanded="true" />
+            <element signature="e#1938#1977#0" expanded="true" />
           </folding>
         </state>
       </provider>

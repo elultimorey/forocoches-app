@@ -12,7 +12,9 @@
     </PreferenceCategory>
     
     <PreferenceCategory android:title="@string/pref_navegacion" android:key="nav_pref">    
-        <CheckBoxPreference android:title="@string/pref_navegacion_javascript" android:key="pref_navegacion_javascript" android:defaultValue="true"></CheckBoxPreference><CheckBoxPreference android:summary="@string/pref_navegacion_completa_text" android:key="pref_navegacion_completa" android:title="@string/pref_navegacion_completa"></CheckBoxPreference>
+        <CheckBoxPreference android:title="@string/pref_navegacion_javascript" android:key="pref_navegacion_javascript" android:defaultValue="true"></CheckBoxPreference>
+        <CheckBoxPreference android:title="@string/pref_navegacion_imagenes" android:key="pref_cargar_imagenes" android:defaultValue="true" />
+        <CheckBoxPreference android:summary="@string/pref_navegacion_completa_text" android:key="pref_navegacion_completa" android:title="@string/pref_navegacion_completa"></CheckBoxPreference>
     </PreferenceCategory>
     <PreferenceCategory android:title="@string/pref_about" android:key="about_pref"><Preference android:title="@string/pref_about_ayuda" android:summary="@string/pref_about_ayuda_text" android:key="ayuda_pref"></Preference><Preference android:key="acerca_pref" android:title="@string/pref_about_acerca" android:summary="@string/pref_about_acerca_text"></Preference>
     <Preference android:key="version_pref" android:title="@string/pref_about_version" android:enabled="false" android:summary="@string/app_version"></Preference>
