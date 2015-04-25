@@ -1,6 +1,5 @@
 #ForoCoches App
-======
-##Aplicación, no oficial, para android del foro ForoCoches.
+###Aplicación, no oficial, para android del foro ForoCoches.
 
 [Download ForoCoches App](https://play.google.com/store/apps/details?id=es.elultimorey.forocoches)
 
