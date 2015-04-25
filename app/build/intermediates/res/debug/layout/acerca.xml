@@ -65,7 +65,7 @@
 		        android:layout_width="wrap_content"
 		        android:layout_height="wrap_content"
 	  			android:layout_marginBottom="20dip"
-        		style="@style/texto_normal"/>        
+        		style="@style/texto_normal"/>
 		    </LinearLayout>
 	    </LinearLayout>
 	    

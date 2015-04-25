@@ -477,6 +477,7 @@ public class ForoCochesActivity extends Activity implements OnImageUploadedListe
         listItems.addLast("Buscar");
         listItems.addLast("Compartir");
         listItems.addLast("Temas de hoy");
+        listItems.addLast("Editar lista de ignorados");
         // Evita 'Force Close' si se pulsa y aún no hay url en webView
         final String url;
         if (webView.getUrl() != null)
@@ -491,6 +492,10 @@ public class ForoCochesActivity extends Activity implements OnImageUploadedListe
             listItems.addFirst("Nuevo Tema");
         if (url.contains("newreply") || url.contains("newthread") || url.contains("showthread"))
             listItems.addFirst("Subir Imagen");
+        if (url.contains("member")) {
+            listItems.addFirst("Enviar mensaje privado");
+            listItems.addFirst("Añadir a la lista de ignorados");
+        }
 
         final CharSequence[] items = new CharSequence[listItems.size()];
         for (int i = 0; i < listItems.size(); i++)
@@ -507,16 +512,20 @@ public class ForoCochesActivity extends Activity implements OnImageUploadedListe
                             openCompartir();
                         else if (items[item].equals("Temas de hoy"))
                             webView.loadUrl(miURLHandler.temasHoy());
+                        else if (items[item].equals("Editar lista de ignorados"))
+                            webView.loadUrl(miURLHandler.editarListaIgnorados());
                         else if (items[item].equals("Responder"))
                             webView.loadUrl(miURLHandler.responer(url));
-                        else if (items[item].equals("Suscribir")) {
+                        else if (items[item].equals("Suscribir"))
                             webView.loadUrl(miURLHandler.suscribir(url));
-                        }
                         else if (items[item].equals("Nuevo Tema"))
                             webView.loadUrl(miURLHandler.nuevoTema(url));
-                        else if (items[item].equals("Subir Imagen")) {
+                        else if (items[item].equals("Subir Imagen"))
                             openImageUpload();
-                        }
+                        else if (items[item].equals("Enviar mensaje privado"))
+                            webView.loadUrl(miURLHandler.enviarMensajeprivado(webView.getUrl()));
+                        else if (items[item].equals("Añadir a la lista de ignorados"))
+                            webView.loadUrl(miURLHandler.añadirAIgnorados(webView.getUrl()));
                     }
                 });
         AlertDialog alert = builder.create();
@@ -545,7 +554,7 @@ public class ForoCochesActivity extends Activity implements OnImageUploadedListe
     public void openImageUpload() {
         // custom dialog
         final Dialog dialog = new Dialog(mContext);
-        dialog.setContentView(R.layout.activity_image_upload);
+        dialog.setContentView(R.layout.image_upload);
         dialog.setTitle("Subir Imagen...");
 
         // set the custom dialog components - text, image and button

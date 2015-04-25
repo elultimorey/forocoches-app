@@ -3,6 +3,7 @@ package es.elultimorey.forocoches;
 import android.app.Activity;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
+import android.util.Log;
 
 public class URLHandler {
 
@@ -97,6 +98,10 @@ public class URLHandler {
 	public String temasHoy() {
 		return getURL() + "search.php?do=getdaily";
 	}
+
+    public String editarListaIgnorados() {
+        return getURL() + "profile.php?do=ignorelist";
+    }
 	
 	public String responer(String hilo) {
 		if (!hilo.contains("#"))
@@ -251,6 +256,18 @@ public class URLHandler {
 	
 	public String editarFirma() {
 		return getURL() + "profile.php?do=editsignature";
-	
 	}
+
+    public  String añadirAIgnorados(String url) {
+        Log.d("###", url);
+        String[] split = url.split("member.php\\?u=");
+        Log.d("###", split[0]);
+        Log.d("###", split[1]);
+        return getURL() + "profile.php?do=addlist&userlist=ignore&u=" + split[1];
+    }
+
+    public String enviarMensajeprivado(String url) {
+        String[] split = url.split("member.php\\?u=");
+        return getURL() + "private.php?do=newpm&u=" + split[1];
+    }
 }

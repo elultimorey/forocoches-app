@@ -2,7 +2,7 @@
 <resources>
 	<!-- General -->
     <string name="app_name">ForoCoches App</string>
-    <string name="app_version">1.882</string>
+    <string name="app_version">1.888</string>
     <string name="Aceptar">Aceptar</string>
     <string name="Cancelar">Cancelar</string>
     <string name="dialog_user_title">Panel de Control de Usuario</string>
@@ -60,24 +60,21 @@
     
     <!-- Ayuda -->
     <string name="ayuda_title_shortcurts">Accesos Directos:</string>
-    <string name="ayuda_title_buttons">Botones Físicos del Teléfono:</string>
-    <string name="ayuda_title_comments">Comentarios:</string>
     <string name="ayuda_text_shortcurts">\t<b>Barra Superior</b>: Si pulsas la barra superior, la página subirá al principio automáticamente.\n\t- <b>Lexus:</b> Página Inicial de ForoCoches.com, y más.\n\t- <b>Dos accesos directos</b> a opciones de la aplicación (selecciona los que prefieras en Ajustes)\n\t- <b>Recargar</b>: Recarga la página actual.</string>
-    <string name="ayuda_text_buttons"><b>Tecla Retroceso:</b>\n\t- Volver a la página anterior.\n\t- Si estamos en la primera página -> Salir de la aplicación.\n<b>Tecla Menú:</b>\n\t- Panel de usuario: Menciones, Mensajes Privados, Temas Suscritos y Temas Suscritos con Novedades.\n\t- Herramientas: Buscar, Compartir, Temas de Hoy. Además dependiendo de donde nos encomtremos podresmos crear un Nuevo Tema, y responder o suscribirnos a un hilo.\n\t- Adelante: Avanza a la página anterior si hemos retrocedido.\n\t- Ajustes: Permite ajustar las opciones del navegador (accesos directos, nombre de usuario...).\n\t- Salir: Salir de la aplicación\n<b>Tecla Búsqueda:</b>\n\t- Permite utilizar el motor de búsqueda del foro.</string>
-    <string name="ayuda_img">Guardar Imagen</string>
-    <string name="ayuda_img_text">Manten el dedo sobre la imagen que quieres guardar y aparecerá una ventana de diálogo con las opciones disponibles. Esta funcionalidad está disponible para versiones de android 2.3.x (Gingerbread) o superiores.</string>
+    <string name="ayuda_title_buttons">Botones Físicos del Teléfono:</string>
+    <string name="ayuda_text_buttons"><b>Tecla Retroceso:</b>\n\t- Volver a la página anterior.\n\t- Si estamos en la primera página -> Salir de la aplicación.\n<b>Tecla Menú:</b>\n\t- Panel de usuario: Menciones, Mensajes Privados, Temas Suscritos y Temas Suscritos con Novedades.\n\t- Herramientas: Buscar, Compartir, Temas de Hoy, Editar lista de ignorados. Además dependiendo de donde nos encomtremos podresmos crear un Nuevo Tema, y responder o suscribirnos a un hilo.\n\t- Adelante: Avanza a la página anterior si hemos retrocedido.\n\t- Ajustes: Permite ajustar las opciones del navegador (accesos directos, nombre de usuario...).\n\t- Salir: Salir de la aplicación\n<b>Tecla Búsqueda:</b>\n\t- Permite utilizar el motor de búsqueda del foro.</string>
     <string name="ayuda_menciones">Menciones</string>
-    <string name="ayuda_menciones_text">Introduce tu nombre de usuario en ajustes o cuando quieras ver las menciones que tienes se te pedirá el mismo.\nSe puede escoger entre ver el hilo en el que te han mencionado y el post en el que te han mencionado seleccionando la opción que prefieras en los ajustes.</string>    
-    <string name="ayuda_text_comments">\tCualquier sugerencia para mejorar la aplicación será bienvenida. Puedes contactarme con un email a: elultimorey.dev@gmail.com.</string>
-    <string name="title_activity_editor">Editor</string>
-
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
-
-    <string name="title_activity_image_upload">ImageUploadActivity</string>
-    <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
-
+    <string name="ayuda_menciones_text">Introduce tu nombre de usuario en ajustes o cuando quieras ver las menciones que tienes se te pedirá el mismo.\nSe puede escoger entre ver el hilo en el que te han mencionado y el post en el que te han mencionado seleccionando la opción que prefieras en los ajustes.</string>
+    <string name="ayuda_img">Guardar Imagen:</string>
+    <string name="ayuda_img_text">Manten el dedo sobre la imagen que quieres guardar y aparecerá una ventana de diálogo con las opciones disponibles. Esta funcionalidad está disponible para versiones de android 2.3.x (Gingerbread) o superiores.</string>
+    <string name="ayuda_upload">Subir Imagen:</string>
+    <string name="ayuda_upload_text">La opción de subir imágenes se encuentra en el menu contextual de la opción Herramientas del menu. Está disponible en las páginas de respuesta al hilo y creación de un hilo nuevo.</string>
+    <string name="ayuda_ignore">Ignorar:</string>
+    <string name="ayuda_ignore_text">Para ignorar a un usuario hay que acceder a su perfil de usuario (pinchando sobre su nombre en cualquier mensaje suyo) y acceder a la opción Herramientas del menú.\nAdemás se puede editar la lista de ignorados desde la opción en el las herramientas</string>
+    <string name="ayuda_title_comments">Comentarios:</string>
+    <string name="ayuda_text_comments">\tCualquier sugerencia para mejorar la aplicación será bienvenida. Puedes contactarme con un email a: </string>
+    <string name="ayuda_mail">elultimorey.dev@gmail.com</string>
+    
     <!-- Editor & Upload -->
     <string name="up_selec">Seleccionar Imagen</string>
     <string name="up_subir">Subir</string>
