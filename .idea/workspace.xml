@@ -59,6 +59,18 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.10344828" vertical-offset="0" max-vertical-offset="900">
+              <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+              <folding>
+                <element signature="e#201#222#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="AboutActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/es/elultimorey/forocoches/AboutActivity.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -111,11 +123,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="strings.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5088161" vertical-offset="908" max-vertical-offset="1305">
-              <caret line="74" column="141" selection-start-line="74" selection-start-column="141" selection-end-line="74" selection-end-column="141" />
+            <state vertical-scroll-proportion="-2.4" vertical-offset="0" max-vertical-offset="1305">
+              <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -124,8 +136,8 @@
       <file leaf-file-name="ayuda.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/ayuda.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.423077" vertical-offset="1346" max-vertical-offset="1845">
-              <caret line="113" column="35" selection-start-line="113" selection-start-column="35" selection-end-line="113" selection-end-column="35" />
+            <state vertical-scroll-proportion="-13.423077" vertical-offset="1046" max-vertical-offset="1875">
+              <caret line="93" column="47" selection-start-line="93" selection-start-column="47" selection-end-line="93" selection-end-column="47" />
               <folding>
                 <element signature="e#493#525#0" expanded="true" />
                 <element signature="e#709#740#0" expanded="true" />
@@ -135,13 +147,13 @@
                 <element signature="e#1652#1682#0" expanded="true" />
                 <element signature="e#1914#1933#0" expanded="true" />
                 <element signature="e#2117#2141#0" expanded="true" />
-                <element signature="e#2368#2398#0" expanded="true" />
-                <element signature="e#2582#2611#0" expanded="true" />
-                <element signature="e#2825#2847#0" expanded="true" />
-                <element signature="e#3074#3101#0" expanded="true" />
-                <element signature="e#3331#3353#0" expanded="true" />
-                <element signature="e#3580#3607#0" expanded="true" />
-                <element signature="e#3877#3897#0" expanded="true" />
+                <element signature="e#2395#2417#0" expanded="true" />
+                <element signature="e#2644#2671#0" expanded="true" />
+                <element signature="e#2949#2971#0" expanded="true" />
+                <element signature="e#3198#3225#0" expanded="true" />
+                <element signature="e#3543#3563#0" expanded="true" />
+                <element signature="e#3878#3908#0" expanded="true" />
+                <element signature="e#4135#4164#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1303,14 +1315,14 @@
         <option value="$PROJECT_DIR$/app/src/main/java/es/elultimorey/forocoches/AboutActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_image_upload.xml" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/es/elultimorey/forocoches/URLHandler.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/es/elultimorey/forocoches/ForoCochesActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/image_upload.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/es/elultimorey/forocoches/AyudaActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/acerca.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/ayuda.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
       </list>
     </option>
   </component>
@@ -1466,6 +1478,20 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="forocoches-app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="manifests" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidManifestsGroupNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -2075,14 +2101,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14319809" vertical-offset="0" max-vertical-offset="900">
-          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/image_upload.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.923077" vertical-offset="0" max-vertical-offset="915">
@@ -2158,8 +2176,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/ayuda.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.423077" vertical-offset="1346" max-vertical-offset="1845">
-          <caret line="113" column="35" selection-start-line="113" selection-start-column="35" selection-end-line="113" selection-end-column="35" />
+        <state vertical-scroll-proportion="-13.423077" vertical-offset="1046" max-vertical-offset="1875">
+          <caret line="93" column="47" selection-start-line="93" selection-start-column="47" selection-end-line="93" selection-end-column="47" />
           <folding>
             <element signature="e#493#525#0" expanded="true" />
             <element signature="e#709#740#0" expanded="true" />
@@ -2169,13 +2187,13 @@
             <element signature="e#1652#1682#0" expanded="true" />
             <element signature="e#1914#1933#0" expanded="true" />
             <element signature="e#2117#2141#0" expanded="true" />
-            <element signature="e#2368#2398#0" expanded="true" />
-            <element signature="e#2582#2611#0" expanded="true" />
-            <element signature="e#2825#2847#0" expanded="true" />
-            <element signature="e#3074#3101#0" expanded="true" />
-            <element signature="e#3331#3353#0" expanded="true" />
-            <element signature="e#3580#3607#0" expanded="true" />
-            <element signature="e#3877#3897#0" expanded="true" />
+            <element signature="e#2395#2417#0" expanded="true" />
+            <element signature="e#2644#2671#0" expanded="true" />
+            <element signature="e#2949#2971#0" expanded="true" />
+            <element signature="e#3198#3225#0" expanded="true" />
+            <element signature="e#3543#3563#0" expanded="true" />
+            <element signature="e#3878#3908#0" expanded="true" />
+            <element signature="e#4135#4164#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2185,9 +2203,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5088161" vertical-offset="908" max-vertical-offset="1305">
-          <caret line="74" column="141" selection-start-line="74" selection-start-column="141" selection-end-line="74" selection-end-column="141" />
+        <state vertical-scroll-proportion="-2.4" vertical-offset="0" max-vertical-offset="1305">
+          <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.10344828" vertical-offset="0" max-vertical-offset="900">
+          <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+          <folding>
+            <element signature="e#201#222#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

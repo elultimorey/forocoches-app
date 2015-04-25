@@ -65,19 +65,6 @@
 	  	android:layout_marginBottom="20dip"
 	  	style="@style/texto_normal"/>
 
-  		<TextView 
-	  	android:layout_width="wrap_content"
-	  	android:layout_height="wrap_content"
-	  	android:text="@string/ayuda_title_comments"
-	  	android:layout_marginBottom="10dip"
-	  	style="@style/texto_h1"/>
-	  	<TextView 
-	  	android:layout_width="wrap_content"
-	  	android:layout_height="wrap_content"
-	  	android:text="@string/ayuda_text_comments"
-	  	android:layout_marginLeft="10dip"
-	  	style="@style/texto_normal"/>
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -89,7 +76,8 @@
             android:layout_height="wrap_content"
             android:text="@string/ayuda_upload_text"
             android:layout_marginLeft="10dip"
-            style="@style/texto_normal"/>
+            style="@style/texto_normal"
+            android:layout_marginBottom="20dip"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -102,7 +90,8 @@
             android:layout_height="wrap_content"
             android:text="@string/ayuda_ignore_text"
             android:layout_marginLeft="10dip"
-            style="@style/texto_normal"/>
+            style="@style/texto_normal"
+            android:layout_marginBottom="20dip"/>
         <TextView
             android:id="@+id/ayuda_mail"
             android:layout_width="wrap_content"
@@ -112,6 +101,19 @@
             android:textColor="@color/azul_link"
             style="@style/texto_normal"
             android:autoLink="email"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ayuda_title_comments"
+            android:layout_marginBottom="10dip"
+            style="@style/texto_h1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ayuda_text_comments"
+            android:layout_marginLeft="10dip"
+            style="@style/texto_normal"/>
   	</LinearLayout>
     
 </ScrollView>
