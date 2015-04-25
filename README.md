@@ -9,23 +9,22 @@ Las contraseñas no son guardadas por la aplicación si no por el navegador prop
 Esta aplicación implementa Accesos Directos que pueden realizarse en el navegador para ayudar y mejorar la experiencia de usuario en la navegación por el foro desde el teléfono móvil.
 
 1. Accesos Directos de la Barra Superior:
-- Lexus: Página Inicial de ForoCoches.com, y más.
-- Dos accesos directos a opciones de la aplicación (selecciona los que prefieras en Ajustes)
-- Recargar: Recarga la página actual.
+  - Lexus: Página Inicial de ForoCoches.com, y más.
+  - Dos accesos directos a opciones de la aplicación (selecciona los que prefieras en Ajustes)
+  - Recargar: Recarga la página actual.
 
 2. Botones Físicos del Teléfono:
-* Tecla Retroceso:
-- Volver a la página anterior.
-- Si estamos en la primera página -> Salir de la aplicación.
-* Tecla Menú:
-- Panel de usuario: Menciones, Mensajes Privados, Temas Suscritos y Temas Suscritos con
-Novedades.
-- Herramientas del foro: Buscar, Temas de hoy, Ir a... (acceso directoa todos los subforos). Además dependiendo de donde nos encomtremos podresmos crear un Nuevo Tema, y responder o suscribirnos a un hilo.
-- Adelante: Avanza a la página anterior si hemos retrocedido.
-- Ajustes: Permite elegir los ajustes la aplicación (accesos directos, nombre de usuario...).
-- Salir: Salir de la aplicación
-* Tecla Búsqueda:
-- Permite utilizar el motor de búsqueda del foro.
+  * Tecla Retroceso:
+    - Volver a la página anterior.
+    - Si estamos en la primera página -> Salir de la aplicación.
+  * Tecla Menú:
+    - Panel de usuario: Menciones, Mensajes Privados, Temas Suscritos, Temas Suscritos con Novedades y Editar la lista de ignorados.
+  - Herramientas del foro: Buscar, Temas de hoy, Ir a... (acceso directoa todos los subforos). Además dependiendo de donde nos encomtremos podresmos crear un Nuevo Tema, y responder o suscribirnos a un hilo.
+  - Adelante: Avanza a la página anterior si hemos retrocedido.
+  - Ajustes: Permite elegir los ajustes la aplicación (accesos directos, nombre de usuario...).
+  - Salir: Salir de la aplicación
+  * Tecla Búsqueda:
+   - Permite utilizar el motor de búsqueda del foro.
 
 3. Menciones:
 Introduce tu nombre de usuario en ajustes o en cuando quieras ver las menciones que tienes se te pedirá el mismo.
