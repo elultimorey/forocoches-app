@@ -2,7 +2,7 @@
 ###Aplicación, no oficial, para android del foro ForoCoches.
 ![ForoCoches App](http://i.imgur.com/Rf2QWaa.png)
 
-[Download ForoCoches App](https://play.google.com/store/apps/details?id=es.elultimorey.forocoches)
+[Descargar ForoCoches App](https://play.google.com/store/apps/details?id=es.elultimorey.forocoches)
 
 Esta aplicación utiliza el navegador del teléfono, carga la dirección "m.forocoches.com".
 Las contraseñas no son guardadas por la aplicación si no por el navegador proporcionado por el sistema. Por esta razón en "Menciones" has de introducir tu usuario. La publicidad mostrada es la que pone Electrik en el foro, no mía.
@@ -41,4 +41,4 @@ La opción de subir imágenes se encuentra en el menu contextual de la opción H
 Para ignorar a un usuario hay que acceder a su perfil de usuario (pinchando sobre su nombre en cualquier mensaje suyo) y acceder a la opción Herramientas del menú.
 Además se puede editar la lista de ignorados desde la opción en el menú herramientas.
 
-###Cualquier sugerencia para mejorar la aplicación será bienvenida.
+####Cualquier sugerencia para mejorar la aplicación será bienvenida.
