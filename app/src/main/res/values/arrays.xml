@@ -44,4 +44,16 @@
         <item name="mensajes">1</item>
     </string-array>
 
+
+    <string-array name="cargar_imagenes">
+        <item name="siempre">Siempre</item>
+        <item name="wifi">Sólo con wifi</item>
+        <item name="nunca">Nunca</item>
+    </string-array>
+    <string-array name="cargar_imagenes_values">
+        <item name="siempre">siempre</item>
+        <item name="wifi">wifi</item>
+        <item name="nunca">nunca</item>
+    </string-array>
+
 </resources>

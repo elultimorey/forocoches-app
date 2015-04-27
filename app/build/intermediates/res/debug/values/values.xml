@@ -2,6 +2,16 @@
 <resources>
     <!-- From: file:/home/jose/mecagoenlafruta/forocoches-app/app/src/main/res/values/arrays.xml -->
     <eat-comment/>
+    <string-array name="cargar_imagenes">
+        <item name="siempre">Siempre</item>
+        <item name="wifi">Sólo con wifi</item>
+        <item name="nunca">Nunca</item>
+    </string-array>
+    <string-array name="cargar_imagenes_values">
+        <item name="siempre">siempre</item>
+        <item name="wifi">wifi</item>
+        <item name="nunca">nunca</item>
+    </string-array>
     <string-array name="menciones">
         <item name="temas">Temas</item>
         <item name="mensajes">Mensajes</item>
@@ -115,6 +125,9 @@
     <string name="pref_navegacion_completa">Ver Versión Completa</string>
     <string name="pref_navegacion_completa_text">Activado web en versión completa. Desactivado web en versión móvil.</string>
     <string name="pref_navegacion_imagenes">Cargar imágenes</string>
+    <string name="pref_navegacion_imagenes_nunca">Nunca</string>
+    <string name="pref_navegacion_imagenes_siempre">Siempre</string>
+    <string name="pref_navegacion_imagenes_wifi">Sólo con wifi</string>
     <string name="pref_navegacion_javascript">Activar JavaScript</string>
     <string name="pref_shortcurt">Definir Accesos Directos</string>
     <string name="pref_shortcurt_first">Primer Acceso Directo</string>

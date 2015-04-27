@@ -101,7 +101,7 @@ public class ForoCochesActivity extends Activity implements OnImageUploadedListe
         webView.getSettings().setSavePassword(true);
         webView.getSettings().setSupportZoom(true);
 
-        webView.getSettings().setDisplayZoomControls(true);
+        //webView.getSettings().setDisplayZoomControls(true);
 
         cargarPreferencias();
 
@@ -109,10 +109,24 @@ public class ForoCochesActivity extends Activity implements OnImageUploadedListe
             @Override
             public void onReceivedError(WebView view, int errorCode, String description, String failingUrl) {
                 super.onReceivedError(view, errorCode, description, failingUrl);
+                view.getSettings().setLoadsImagesAutomatically(true);
                 view.loadUrl("file:///android_asset/net/forocoches.com.net-error.html");
             }
 
             public void onPageStarted(WebView view, String url, Bitmap favicon) {
+
+                String cargarImagenes = mPrefs.getString("cargar_imagenes_pref", "siempre");
+                ConnectivityManager connManager = (ConnectivityManager) getSystemService(CONNECTIVITY_SERVICE);
+                NetworkInfo mWifi = connManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI);
+                // Siempre
+                if (cargarImagenes.equals("siempre"))
+                    webView.getSettings().setLoadsImagesAutomatically(true);
+                    // Sólo wifi
+                else if (cargarImagenes.equals("wifi"))
+                    webView.getSettings().setLoadsImagesAutomatically(mWifi.isConnected());
+                    // Nunca
+                else
+                    webView.getSettings().setLoadsImagesAutomatically(false);
 
                 if (url.contains("about:blank")) {
                     //
@@ -172,12 +186,7 @@ public class ForoCochesActivity extends Activity implements OnImageUploadedListe
                     //
                 }
 
-                if ((!url.contains("forocoches.com")) && (url.contains("jpg") || url.contains("jpeg") || url.contains("gif") || url.contains("png"))) {
-                    Log.d("###", "IMG: "+url);
-                }
-                else {
-                    super.onLoadResource(view, url);
-                }
+                super.onLoadResource(view, url);
 
             }
 
@@ -357,7 +366,8 @@ public class ForoCochesActivity extends Activity implements OnImageUploadedListe
                     webView.goForward();
                 break;
             case R.id.ajustes:
-                startActivity(new Intent(getApplicationContext(), PreferencesActivity.class));
+                Intent i = new Intent(this, PreferencesActivity.class);
+                startActivityForResult(i, 1);
                 break;
             case R.id.salir:
                 finish();
@@ -991,8 +1001,8 @@ public class ForoCochesActivity extends Activity implements OnImageUploadedListe
             secondShorcurt.setImageResource(R.drawable.ic_bar_herramientas);
         }
 
+
         webView.getSettings().setJavaScriptEnabled(mPrefs.getBoolean("pref_navegacion_javascript", true));
-        webView.getSettings().setLoadsImagesAutomatically(mPrefs.getBoolean("pref_cargar_imagenes", true));
 
         if (miURLHandler.verVersionCompleta(mPrefs.getBoolean("pref_navegacion_completa", false)))
             webView.loadUrl(miURLHandler.renovarURL(webView.getUrl()));
@@ -1077,7 +1087,10 @@ public class ForoCochesActivity extends Activity implements OnImageUploadedListe
 
         try {
             if (requestCode == IntentHelper.FILE_PICK) {
-                if (resultCode == RESULT_OK) {
+                if (resultCode == RESULT_OK && data.getStringExtra("result").equals("1")) {
+                    cargarPreferencias();
+                }
+                else if (resultCode == RESULT_OK) {
                     returnUri = data.getData();
                     chosenFile = new File(DocumentHelper.getPath(this, returnUri));
                     Picasso.with(mActivity).load(chosenFile).fit().into(uploadImage);
@@ -1087,6 +1100,6 @@ public class ForoCochesActivity extends Activity implements OnImageUploadedListe
         } catch (Exception e) {
             new NotificationHelper(mContext).createFailedUploadNotification(0);
         }
-
     }
+
 }

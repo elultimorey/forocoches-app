@@ -35,6 +35,9 @@
 	    <string name="pref_user_menciones">Menciones</string>
 	    <string name="pref_navegacion_javascript">Activar JavaScript</string>
         <string name="pref_navegacion_imagenes">Cargar imágenes</string>
+    <string name="pref_navegacion_imagenes_siempre">Siempre</string>
+    <string name="pref_navegacion_imagenes_wifi">Sólo con wifi</string>
+    <string name="pref_navegacion_imagenes_nunca">Nunca</string>
 	    <string name="pref_navegacion_completa">Ver Versión Completa</string>
 	    <string name="pref_about_ayuda">Ayuda</string>
 	    <string name="pref_about_acerca">Acerca de</string>

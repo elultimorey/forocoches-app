@@ -39,29 +39,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ForoCochesActivity.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ForoCochesActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/es/elultimorey/forocoches/ForoCochesActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.7777777" vertical-offset="1374" max-vertical-offset="15720">
-              <caret line="102" column="0" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.109375" vertical-offset="1630" max-vertical-offset="15915">
+              <caret line="111" column="67" selection-start-line="111" selection-start-column="67" selection-end-line="111" selection-end-column="67" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#7936#7937#0" expanded="true" />
-                <element signature="e#7998#7999#0" expanded="true" />
-                <element signature="e#8048#8507#0" expanded="true" />
-                <element signature="e#8496#8497#0" expanded="true" />
-                <element signature="e#8597#8747#0" expanded="true" />
-                <element signature="e#8736#8737#0" expanded="true" />
-                <element signature="e#8788#8981#0" expanded="true" />
-                <element signature="e#8970#8971#0" expanded="true" />
-                <element signature="e#9073#9215#0" expanded="true" />
-                <element signature="e#9204#9205#0" expanded="true" />
-                <element signature="e#9260#9777#0" expanded="true" />
-                <element signature="e#9766#9767#0" expanded="true" />
-                <element signature="e#9823#10342#0" expanded="true" />
-                <element signature="e#10331#10332#0" expanded="true" />
-                <element signature="e#10380#11061#0" expanded="true" />
-                <element signature="e#11050#11051#0" expanded="true" />
+                <element signature="e#8514#8515#0" expanded="true" />
+                <element signature="e#8576#8577#0" expanded="true" />
+                <element signature="e#8626#9085#0" expanded="true" />
+                <element signature="e#9074#9075#0" expanded="true" />
+                <element signature="e#9175#9325#0" expanded="true" />
+                <element signature="e#9314#9315#0" expanded="true" />
+                <element signature="e#9366#9559#0" expanded="true" />
+                <element signature="e#9548#9549#0" expanded="true" />
+                <element signature="e#9651#9793#0" expanded="true" />
+                <element signature="e#9782#9783#0" expanded="true" />
+                <element signature="e#9838#10355#0" expanded="true" />
+                <element signature="e#10344#10345#0" expanded="true" />
+                <element signature="e#10401#10920#0" expanded="true" />
+                <element signature="e#10909#10910#0" expanded="true" />
+                <element signature="e#10958#11639#0" expanded="true" />
+                <element signature="e#11628#11629#0" expanded="true" />
+                <element signature="e#16839#16865#0" expanded="true" />
+                <element signature="e#20876#20910#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -70,23 +72,61 @@
       <file leaf-file-name="PreferencesActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/es/elultimorey/forocoches/PreferencesActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="461" max-vertical-offset="750">
-              <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
-              <folding />
+            <state vertical-scroll-proportion="-7.4444447" vertical-offset="729" max-vertical-offset="1845">
+              <caret line="62" column="47" selection-start-line="62" selection-start-column="47" selection-end-line="62" selection-end-column="47" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="preferences.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="preferences.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/xml/preferences.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.65217394" vertical-offset="45" max-vertical-offset="480">
-              <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="133" max-vertical-offset="480">
+              <caret line="15" column="98" selection-start-line="15" selection-start-column="78" selection-end-line="15" selection-end-column="98" />
               <folding>
+                <element signature="e#186#210#0" expanded="true" />
+                <element signature="e#370#400#0" expanded="true" />
+                <element signature="e#417#452#0" expanded="true" />
+                <element signature="e#467#497#0" expanded="true" />
+                <element signature="e#675#706#0" expanded="true" />
+                <element signature="e#723#759#0" expanded="true" />
+                <element signature="e#774#805#0" expanded="true" />
+                <element signature="e#917#936#0" expanded="true" />
+                <element signature="e#1010#1032#0" expanded="true" />
+                <element signature="e#1055#1082#0" expanded="true" />
+                <element signature="e#1099#1123#0" expanded="true" />
+                <element signature="e#1138#1162#0" expanded="true" />
+                <element signature="e#1336#1360#0" expanded="true" />
+                <element signature="e#1377#1411#0" expanded="true" />
+                <element signature="e#1426#1455#0" expanded="true" />
+                <element signature="e#1527#1552#0" expanded="true" />
                 <element signature="e#1623#1659#0" expanded="true" />
-                <element signature="e#1793#1827#0" expanded="true" />
-                <element signature="e#1938#1977#0" expanded="true" />
+                <element signature="e#1923#1957#0" expanded="true" />
+                <element signature="e#1974#2016#0" expanded="true" />
+                <element signature="e#2031#2065#0" expanded="true" />
+                <element signature="e#2128#2167#0" expanded="true" />
+                <element signature="e#2221#2255#0" expanded="true" />
+                <element signature="e#2342#2362#0" expanded="true" />
+                <element signature="e#2414#2440#0" expanded="true" />
+                <element signature="e#2457#2488#0" expanded="true" />
+                <element signature="e#2579#2606#0" expanded="true" />
+                <element signature="e#2623#2655#0" expanded="true" />
+                <element signature="e#2727#2755#0" expanded="true" />
+                <element signature="e#2796#2817#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="arrays.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/arrays.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="615" max-vertical-offset="975">
+              <caret line="50" column="39" selection-start-line="50" selection-start-column="39" selection-end-line="50" selection-end-column="39" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -94,8 +134,8 @@
       <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.0" vertical-offset="390" max-vertical-offset="1320">
-              <caret line="36" column="37" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
+            <state vertical-scroll-proportion="-2.4615386" vertical-offset="427" max-vertical-offset="1365">
+              <caret line="37" column="59" selection-start-line="37" selection-start-column="59" selection-end-line="37" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -1226,7 +1266,6 @@
       <list>
         <option value="$PROJECT_DIR$/app/src/main/java/es/elultimorey/forocoches/Webview.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/es/elultimorey/forocoches/EnumShortcut.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/arrays.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_editor.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/akiniyaloctsImgur/helpers/IntentHelper.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/image_picker.xml" />
@@ -1236,7 +1275,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/akiniyaloctsImgur/helpers/NotificationHelper.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/es/elultimorey/forocoches/ImageUploadActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/es/elultimorey/forocoches/PreferencesActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/es/elultimorey/forocoches/AboutActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_image_upload.xml" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
@@ -1246,17 +1284,19 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/acerca.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/ayuda.xml" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/arrays.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/es/elultimorey/forocoches/ForoCochesActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/xml/preferences.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/es/elultimorey/forocoches/PreferencesActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/es/elultimorey/forocoches/ForoCochesActivity.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="65" />
-    <option name="y" value="24" />
+    <option name="y" value="-4" />
     <option name="width" value="1301" />
-    <option name="height" value="744" />
+    <option name="height" value="772" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -1284,9 +1324,9 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane" />
+      <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -1475,12 +1515,12 @@
     <key name="android.template.packageName">
       <recent name="es.elultimorey.forocoches" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/assets/net" />
+    </key>
     <key name="android.template.parentActivityClass">
       <recent name="" />
       <recent name="es.elultimorey.forocoches.ForoCochesActivity" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/src/main/assets/net" />
     </key>
   </component>
   <component name="RunManager" selected="Android Application.app">
@@ -1663,13 +1703,12 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="1301" height="744" extended-state="6" />
+    <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962668" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.58028615" sideWeight="0.50039715" order="7" side_tool="true" content_ui="tabs" />
@@ -1678,7 +1717,7 @@
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.58028615" sideWeight="0.50039715" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21939586" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.49761525" sideWeight="0.49960285" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38473767" sideWeight="0.49960285" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962668" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2494043" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1691,6 +1730,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962668" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290938" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1752,22 +1792,24 @@
           <caret line="138" column="40" selection-start-line="138" selection-start-column="40" selection-end-line="138" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#7936#7937#0" expanded="true" />
-            <element signature="e#7998#7999#0" expanded="true" />
-            <element signature="e#8048#8507#0" expanded="true" />
-            <element signature="e#8496#8497#0" expanded="true" />
-            <element signature="e#8597#8747#0" expanded="true" />
-            <element signature="e#8736#8737#0" expanded="true" />
-            <element signature="e#8788#8981#0" expanded="true" />
-            <element signature="e#8970#8971#0" expanded="true" />
-            <element signature="e#9073#9215#0" expanded="true" />
-            <element signature="e#9204#9205#0" expanded="true" />
-            <element signature="e#9260#9777#0" expanded="true" />
-            <element signature="e#9766#9767#0" expanded="true" />
-            <element signature="e#9823#10342#0" expanded="true" />
-            <element signature="e#10331#10332#0" expanded="true" />
-            <element signature="e#10380#11061#0" expanded="true" />
-            <element signature="e#11050#11051#0" expanded="true" />
+            <element signature="e#8514#8515#0" expanded="true" />
+            <element signature="e#8576#8577#0" expanded="true" />
+            <element signature="e#8626#9085#0" expanded="true" />
+            <element signature="e#9074#9075#0" expanded="true" />
+            <element signature="e#9175#9325#0" expanded="true" />
+            <element signature="e#9314#9315#0" expanded="true" />
+            <element signature="e#9366#9559#0" expanded="true" />
+            <element signature="e#9548#9549#0" expanded="true" />
+            <element signature="e#9651#9793#0" expanded="true" />
+            <element signature="e#9782#9783#0" expanded="true" />
+            <element signature="e#9838#10355#0" expanded="true" />
+            <element signature="e#10344#10345#0" expanded="true" />
+            <element signature="e#10401#10920#0" expanded="true" />
+            <element signature="e#10909#10910#0" expanded="true" />
+            <element signature="e#10958#11639#0" expanded="true" />
+            <element signature="e#11628#11629#0" expanded="true" />
+            <element signature="e#16839#16865#0" expanded="true" />
+            <element signature="e#20876#20910#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1793,22 +1835,24 @@
           <caret line="138" column="40" selection-start-line="138" selection-start-column="40" selection-end-line="138" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#7936#7937#0" expanded="true" />
-            <element signature="e#7998#7999#0" expanded="true" />
-            <element signature="e#8048#8507#0" expanded="true" />
-            <element signature="e#8496#8497#0" expanded="true" />
-            <element signature="e#8597#8747#0" expanded="true" />
-            <element signature="e#8736#8737#0" expanded="true" />
-            <element signature="e#8788#8981#0" expanded="true" />
-            <element signature="e#8970#8971#0" expanded="true" />
-            <element signature="e#9073#9215#0" expanded="true" />
-            <element signature="e#9204#9205#0" expanded="true" />
-            <element signature="e#9260#9777#0" expanded="true" />
-            <element signature="e#9766#9767#0" expanded="true" />
-            <element signature="e#9823#10342#0" expanded="true" />
-            <element signature="e#10331#10332#0" expanded="true" />
-            <element signature="e#10380#11061#0" expanded="true" />
-            <element signature="e#11050#11051#0" expanded="true" />
+            <element signature="e#8514#8515#0" expanded="true" />
+            <element signature="e#8576#8577#0" expanded="true" />
+            <element signature="e#8626#9085#0" expanded="true" />
+            <element signature="e#9074#9075#0" expanded="true" />
+            <element signature="e#9175#9325#0" expanded="true" />
+            <element signature="e#9314#9315#0" expanded="true" />
+            <element signature="e#9366#9559#0" expanded="true" />
+            <element signature="e#9548#9549#0" expanded="true" />
+            <element signature="e#9651#9793#0" expanded="true" />
+            <element signature="e#9782#9783#0" expanded="true" />
+            <element signature="e#9838#10355#0" expanded="true" />
+            <element signature="e#10344#10345#0" expanded="true" />
+            <element signature="e#10401#10920#0" expanded="true" />
+            <element signature="e#10909#10910#0" expanded="true" />
+            <element signature="e#10958#11639#0" expanded="true" />
+            <element signature="e#11628#11629#0" expanded="true" />
+            <element signature="e#16839#16865#0" expanded="true" />
+            <element signature="e#20876#20910#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1834,22 +1878,24 @@
           <caret line="109" column="81" selection-start-line="109" selection-start-column="81" selection-end-line="109" selection-end-column="81" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#7936#7937#0" expanded="true" />
-            <element signature="e#7998#7999#0" expanded="true" />
-            <element signature="e#8048#8507#0" expanded="true" />
-            <element signature="e#8496#8497#0" expanded="true" />
-            <element signature="e#8597#8747#0" expanded="true" />
-            <element signature="e#8736#8737#0" expanded="true" />
-            <element signature="e#8788#8981#0" expanded="true" />
-            <element signature="e#8970#8971#0" expanded="true" />
-            <element signature="e#9073#9215#0" expanded="true" />
-            <element signature="e#9204#9205#0" expanded="true" />
-            <element signature="e#9260#9777#0" expanded="true" />
-            <element signature="e#9766#9767#0" expanded="true" />
-            <element signature="e#9823#10342#0" expanded="true" />
-            <element signature="e#10331#10332#0" expanded="true" />
-            <element signature="e#10380#11061#0" expanded="true" />
-            <element signature="e#11050#11051#0" expanded="true" />
+            <element signature="e#8514#8515#0" expanded="true" />
+            <element signature="e#8576#8577#0" expanded="true" />
+            <element signature="e#8626#9085#0" expanded="true" />
+            <element signature="e#9074#9075#0" expanded="true" />
+            <element signature="e#9175#9325#0" expanded="true" />
+            <element signature="e#9314#9315#0" expanded="true" />
+            <element signature="e#9366#9559#0" expanded="true" />
+            <element signature="e#9548#9549#0" expanded="true" />
+            <element signature="e#9651#9793#0" expanded="true" />
+            <element signature="e#9782#9783#0" expanded="true" />
+            <element signature="e#9838#10355#0" expanded="true" />
+            <element signature="e#10344#10345#0" expanded="true" />
+            <element signature="e#10401#10920#0" expanded="true" />
+            <element signature="e#10909#10910#0" expanded="true" />
+            <element signature="e#10958#11639#0" expanded="true" />
+            <element signature="e#11628#11629#0" expanded="true" />
+            <element signature="e#16839#16865#0" expanded="true" />
+            <element signature="e#20876#20910#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1928,14 +1974,6 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_bar_actualizar.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/arrays.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="426" max-vertical-offset="795">
-          <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/assets/net/forocoches.com.net-error.html">
@@ -2080,7 +2118,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="720">
           <caret line="48" column="21" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2088,7 +2125,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2727" max-vertical-offset="3060">
           <caret line="264" column="31" selection-start-line="264" selection-start-column="31" selection-end-line="264" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2096,7 +2132,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="705">
           <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2132,56 +2167,94 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/es/elultimorey/forocoches/PreferencesActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/arrays.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="56" max-vertical-offset="750">
-          <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="551" max-vertical-offset="975">
+          <caret line="50" column="39" selection-start-line="50" selection-start-column="39" selection-end-line="50" selection-end-column="39" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.0" vertical-offset="390" max-vertical-offset="1320">
-          <caret line="36" column="37" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/es/elultimorey/forocoches/ForoCochesActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.7777777" vertical-offset="1374" max-vertical-offset="15720">
-          <caret line="102" column="0" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#7936#7937#0" expanded="true" />
-            <element signature="e#7998#7999#0" expanded="true" />
-            <element signature="e#8048#8507#0" expanded="true" />
-            <element signature="e#8496#8497#0" expanded="true" />
-            <element signature="e#8597#8747#0" expanded="true" />
-            <element signature="e#8736#8737#0" expanded="true" />
-            <element signature="e#8788#8981#0" expanded="true" />
-            <element signature="e#8970#8971#0" expanded="true" />
-            <element signature="e#9073#9215#0" expanded="true" />
-            <element signature="e#9204#9205#0" expanded="true" />
-            <element signature="e#9260#9777#0" expanded="true" />
-            <element signature="e#9766#9767#0" expanded="true" />
-            <element signature="e#9823#10342#0" expanded="true" />
-            <element signature="e#10331#10332#0" expanded="true" />
-            <element signature="e#10380#11061#0" expanded="true" />
-            <element signature="e#11050#11051#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/xml/preferences.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.65217394" vertical-offset="45" max-vertical-offset="480">
-          <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="133" max-vertical-offset="480">
+          <caret line="15" column="98" selection-start-line="15" selection-start-column="78" selection-end-line="15" selection-end-column="98" />
           <folding>
+            <element signature="e#186#210#0" expanded="true" />
+            <element signature="e#370#400#0" expanded="true" />
+            <element signature="e#417#452#0" expanded="true" />
+            <element signature="e#467#497#0" expanded="true" />
+            <element signature="e#675#706#0" expanded="true" />
+            <element signature="e#723#759#0" expanded="true" />
+            <element signature="e#774#805#0" expanded="true" />
+            <element signature="e#917#936#0" expanded="true" />
+            <element signature="e#1010#1032#0" expanded="true" />
+            <element signature="e#1055#1082#0" expanded="true" />
+            <element signature="e#1099#1123#0" expanded="true" />
+            <element signature="e#1138#1162#0" expanded="true" />
+            <element signature="e#1336#1360#0" expanded="true" />
+            <element signature="e#1377#1411#0" expanded="true" />
+            <element signature="e#1426#1455#0" expanded="true" />
+            <element signature="e#1527#1552#0" expanded="true" />
             <element signature="e#1623#1659#0" expanded="true" />
-            <element signature="e#1793#1827#0" expanded="true" />
-            <element signature="e#1938#1977#0" expanded="true" />
+            <element signature="e#1923#1957#0" expanded="true" />
+            <element signature="e#1974#2016#0" expanded="true" />
+            <element signature="e#2031#2065#0" expanded="true" />
+            <element signature="e#2128#2167#0" expanded="true" />
+            <element signature="e#2221#2255#0" expanded="true" />
+            <element signature="e#2342#2362#0" expanded="true" />
+            <element signature="e#2414#2440#0" expanded="true" />
+            <element signature="e#2457#2488#0" expanded="true" />
+            <element signature="e#2579#2606#0" expanded="true" />
+            <element signature="e#2623#2655#0" expanded="true" />
+            <element signature="e#2727#2755#0" expanded="true" />
+            <element signature="e#2796#2817#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.4615386" vertical-offset="427" max-vertical-offset="1365">
+          <caret line="37" column="59" selection-start-line="37" selection-start-column="59" selection-end-line="37" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/es/elultimorey/forocoches/PreferencesActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.4444447" vertical-offset="729" max-vertical-offset="1845">
+          <caret line="62" column="47" selection-start-line="62" selection-start-column="47" selection-end-line="62" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/es/elultimorey/forocoches/ForoCochesActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.109375" vertical-offset="1630" max-vertical-offset="15915">
+          <caret line="111" column="67" selection-start-line="111" selection-start-column="67" selection-end-line="111" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#8514#8515#0" expanded="true" />
+            <element signature="e#8576#8577#0" expanded="true" />
+            <element signature="e#8626#9085#0" expanded="true" />
+            <element signature="e#9074#9075#0" expanded="true" />
+            <element signature="e#9175#9325#0" expanded="true" />
+            <element signature="e#9314#9315#0" expanded="true" />
+            <element signature="e#9366#9559#0" expanded="true" />
+            <element signature="e#9548#9549#0" expanded="true" />
+            <element signature="e#9651#9793#0" expanded="true" />
+            <element signature="e#9782#9783#0" expanded="true" />
+            <element signature="e#9838#10355#0" expanded="true" />
+            <element signature="e#10344#10345#0" expanded="true" />
+            <element signature="e#10401#10920#0" expanded="true" />
+            <element signature="e#10909#10910#0" expanded="true" />
+            <element signature="e#10958#11639#0" expanded="true" />
+            <element signature="e#11628#11629#0" expanded="true" />
+            <element signature="e#16839#16865#0" expanded="true" />
+            <element signature="e#20876#20910#0" expanded="true" />
           </folding>
         </state>
       </provider>
