@@ -2,6 +2,16 @@
 <resources>
     <!-- From: file:/home/jose/mecagoenlafruta/forocoches-app/app/src/main/res/values/arrays.xml -->
     <eat-comment/>
+    <string-array name="cargar_imagenes">
+        <item name="siempre">Siempre</item>
+        <item name="wifi">Sólo con wifi</item>
+        <item name="nunca">Nunca</item>
+    </string-array>
+    <string-array name="cargar_imagenes_values">
+        <item name="siempre">siempre</item>
+        <item name="wifi">wifi</item>
+        <item name="nunca">nunca</item>
+    </string-array>
     <string-array name="menciones">
         <item name="temas">Temas</item>
         <item name="mensajes">Mensajes</item>
@@ -78,7 +88,7 @@
     <string name="acerca_text">\tAplicación, no oficial, para android del foro ForoCoches.\n\tEsta aplicación utiliza el navegador del teléfono, carga la dirección "m.forocoches.com".\n  Las contraseñas no son guardadas por la aplicación si no por el navegador proporcionado por el sistema. Por esta razón en "Menciones" has de introducir tu usuario\n  Esta aplicación implementa Accesos Directos que pueden realizarse en el navegador, simplemente ayuda a que sea más sencilla la navegación.\n\tLa aplicación no tiene acceso a tus datos personales. Si no te fías de la aplicación y quieres el código fuente de la aplicación para echarle un ojo ponte en contacto conmigo y te indicaré como acceder a él.</string>
     <string name="acerca_text2">\tPara participar en el foro debes ser usuario registrado y debes aceptar las condiciones de uso y normas de comportamiento:</string>
     <string name="app_name">ForoCoches App</string>
-    <string name="app_version">1.888a</string>
+    <string name="app_version">1.9</string>
     <string name="ayuda_activity">Ayuda</string>
     <string name="ayuda_ignore">Ignorar:</string>
     <string name="ayuda_ignore_text">Para ignorar a un usuario hay que acceder a su perfil de usuario (pinchando sobre su nombre en cualquier mensaje suyo) y acceder a la opción Herramientas del menú.\nAdemás se puede editar la lista de ignorados desde la opción en el las herramientas</string>
@@ -114,6 +124,10 @@
     <string name="pref_navegacion">Preferencias de Navegación</string>
     <string name="pref_navegacion_completa">Ver Versión Completa</string>
     <string name="pref_navegacion_completa_text">Activado web en versión completa. Desactivado web en versión móvil.</string>
+    <string name="pref_navegacion_imagenes">Cargar imágenes</string>
+    <string name="pref_navegacion_imagenes_nunca">Nunca</string>
+    <string name="pref_navegacion_imagenes_siempre">Siempre</string>
+    <string name="pref_navegacion_imagenes_wifi">Sólo con wifi</string>
     <string name="pref_navegacion_javascript">Activar JavaScript</string>
     <string name="pref_shortcurt">Definir Accesos Directos</string>
     <string name="pref_shortcurt_first">Primer Acceso Directo</string>

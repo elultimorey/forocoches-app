@@ -9,10 +9,12 @@ package es.elultimorey.forocoches;
 
 public final class R {
     public static final class array {
-        public static final int menciones=0x7f050000;
-        public static final int menciones_values=0x7f050001;
-        public static final int shorcurt=0x7f050002;
-        public static final int shorcurt_values=0x7f050003;
+        public static final int cargar_imagenes=0x7f050000;
+        public static final int cargar_imagenes_values=0x7f050001;
+        public static final int menciones=0x7f050002;
+        public static final int menciones_values=0x7f050003;
+        public static final int shorcurt=0x7f050004;
+        public static final int shorcurt_values=0x7f050005;
     }
     public static final class attr {
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
@@ -157,21 +159,25 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int pref_navegacion=0x7f08002a;
         public static final int pref_navegacion_completa=0x7f08002b;
         public static final int pref_navegacion_completa_text=0x7f08002c;
-        public static final int pref_navegacion_javascript=0x7f08002d;
-        public static final int pref_shortcurt=0x7f08002e;
-        public static final int pref_shortcurt_first=0x7f08002f;
-        public static final int pref_shortcurt_first_text=0x7f080030;
-        public static final int pref_shortcurt_second=0x7f080031;
-        public static final int pref_shortcurt_second_text=0x7f080032;
-        public static final int pref_user=0x7f080033;
-        public static final int pref_user_menciones=0x7f080034;
-        public static final int pref_user_menciones_text=0x7f080035;
-        public static final int pref_user_name=0x7f080036;
-        public static final int pref_user_text=0x7f080037;
-        public static final int pref_usuario=0x7f080038;
-        public static final int pref_usuario_text=0x7f080039;
-        public static final int up_selec=0x7f08003a;
-        public static final int up_subir=0x7f08003b;
+        public static final int pref_navegacion_imagenes=0x7f08002d;
+        public static final int pref_navegacion_imagenes_nunca=0x7f08002e;
+        public static final int pref_navegacion_imagenes_siempre=0x7f08002f;
+        public static final int pref_navegacion_imagenes_wifi=0x7f080030;
+        public static final int pref_navegacion_javascript=0x7f080031;
+        public static final int pref_shortcurt=0x7f080032;
+        public static final int pref_shortcurt_first=0x7f080033;
+        public static final int pref_shortcurt_first_text=0x7f080034;
+        public static final int pref_shortcurt_second=0x7f080035;
+        public static final int pref_shortcurt_second_text=0x7f080036;
+        public static final int pref_user=0x7f080037;
+        public static final int pref_user_menciones=0x7f080038;
+        public static final int pref_user_menciones_text=0x7f080039;
+        public static final int pref_user_name=0x7f08003a;
+        public static final int pref_user_text=0x7f08003b;
+        public static final int pref_usuario=0x7f08003c;
+        public static final int pref_usuario_text=0x7f08003d;
+        public static final int up_selec=0x7f08003e;
+        public static final int up_subir=0x7f08003f;
     }
     public static final class style {
         public static final int ButtonBar=0x7f090000;
